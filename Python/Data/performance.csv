@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db9cf1efa4e05a4c994361aa818972854ff9c62636363e55d68ae59c7d121ab4
-size 322
+employee_id,quarter,rating,bonus_eligible,comments
+1,Q1 2024,4.2,yes,Good performer
+1,Q2 2024,4.5,Yes,Exceeded expectations
+2,Q1 2024,3.8,no,Needs improvement
+3,Q2 2024,,maybe,On probation
+4,Q1 2024,4.0,YES,solid work
+5,Q2 2024,2.1,No,underperforming
+9,Q1 2024,4.7,yes,New hire
+2,Q1 2024,3.8,no,Needs improvement
