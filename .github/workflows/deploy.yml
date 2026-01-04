@@ -1,4 +1,4 @@
-name: Deploy All Workshops
+name: Deploy Python Workshop
 
 on:
   push:
@@ -22,48 +22,41 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Build unified site structure
+      - name: Build site
         run: |
           mkdir -p _site
 
-          # Copy each workshop folder if it exists
-          [ -d "Python" ] && cp -r Python _site/
-          [ -d "PowerBI" ] && cp -r PowerBI _site/
-          [ -d "Power Automate" ] && cp -r "Power Automate" _site/
-          [ -d "PowerQuery" ] && cp -r PowerQuery _site/
+          # Publish only the Python workshop (others will be added later)
+          cp -r Python/Webpage/* _site/
 
-          # Create homepage
-          cat > _site/index.html <<EOF
+          # Disable Jekyll processing
+          touch _site/.nojekyll
+
+          # Optional: create a root index.html that redirects or informs
+          cat > _site/index.html <<'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Workshops – Fahim</title>
+  <title>Python Beginner Workshop</title>
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-    h1 { color: #2c3e50; }
-    ul { font-size: 1.1em; }
-    li { margin: 12px 0; }
-    a { color: #3498db; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    body { font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #f9f9f9; color: #333; }
+    a { font-size: 1.2em; padding: 12px 24px; background: #3498db; color: white; text-decoration: none; border-radius: 6px; }
+    a:hover { background: #2980b9; }
   </style>
 </head>
 <body>
-  <h1>📚 My Workshop Collection</h1>
-  <p>Hands-on guides and tutorials by <strong>Fahim</strong>.</p>
-  <ul>
-    <li><a href="Python/">Python Beginner Workshop</a></li>
-    <li><a href="PowerBI/">Power BI Guide</a></li>
-    <li><a href="Power%20Automate/">Power Automate Guide</a></li>
-    <li><a href="PowerQuery/">Power Query Guide</a></li>
-  </ul>
-  <p><em>Updated automatically via GitHub Actions.</em></p>
+  <div>
+    <h1>Python Beginner Workshop</h1>
+    <p>You're in the right place!</p>
+    <a href="./">Open Workshop</a>
+  </div>
 </body>
 </html>
 EOF
 
-      - name: Upload pages artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
