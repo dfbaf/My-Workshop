@@ -27,24 +27,6 @@ jobs:
           mkdir -p _site
           cp -r Python/Webpage/* _site/
           touch _site/.nojekyll
-          echo '<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Python Workshop</title>
-  <style>
-    body{font-family:sans-serif;text-align:center;padding:40px;background:#f5f5f5}
-    a{display:inline-block;margin-top:20px;padding:10px 20px;background:#3498db;color:white;text-decoration:none;border-radius:4px}
-    a:hover{background:#2980b9}
-  </style>
-</head>
-<body>
-  <h1>Python Beginner Workshop</h1>
-  <p>Ready to learn!</p>
-  <a href="./">Open Workshop</a>
-</body>
-</html>' > _site/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
