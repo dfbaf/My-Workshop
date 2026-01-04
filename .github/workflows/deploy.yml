@@ -26,22 +26,14 @@ jobs:
         run: |
           mkdir -p _site
 
-          # Copy each workshop folder as-is (preserving folder names)
-          if [ -d "Python" ]; then
-            cp -r Python _site/
-          fi
-          if [ -d "PowerBI" ]; then
-            cp -r PowerBI _site/
-          fi
-          if [ -d "Power Automate" ]; then
-            cp -r "Power Automate" _site/
-          fi
-          if [ -d "PowerQuery" ]; then
-            cp -r PowerQuery _site/
-          fi
+          # Copy each workshop folder if it exists
+          [ -d "Python" ] && cp -r Python _site/
+          [ -d "PowerBI" ] && cp -r PowerBI _site/
+          [ -d "Power Automate" ] && cp -r "Power Automate" _site/
+          [ -d "PowerQuery" ] && cp -r PowerQuery _site/
 
-          # Create a simple homepage at the root
-          cat > _site/index.html <<'EOF'
+          # Create homepage
+          cat > _site/index.html <<EOF
 <!DOCTYPE html>
 <html lang="en">
 <head>
