@@ -1,0 +1,201 @@
+ItemID,ItemName,Category,Brand,Barcode,CostPrice_MYR,RetailPrice_MYR
+IT00001,Adabi Dairy Spicy,Dairy,Adabi,8116535425961,17.14,19.92
+IT00002,Safi Personal Care Spicy,Personal Care,Safi,8773210779751,15.52,18.04
+IT00003,Mamee Baby Care Original,Baby Care,Mamee,6851319995413,29.33,34.09
+IT00004,Massimo Household Spicy,Household,Massimo,9822507895169,30.1,34.99
+IT00005,Biokos Dairy Spicy,Dairy,Biokos,1569976736384,16.4,19.06
+IT00006,Safi Local Delicacies Family Pack,Local Delicacies,Safi,2005507000352,45.75,53.18
+IT00007,Adabi Snacks Original,Snacks,Adabi,4578524406348,3.28,3.81
+IT00008,Lifebuoy Dairy Spicy,Dairy,Lifebuoy,0660781151148,26.2,30.46
+IT00009,Dutch Lady Baby Care Mini,Baby Care,Dutch Lady,0880650072448,7.51,8.73
+IT00010,F&N Household Family Pack,Household,F&N,9103972677641,11.29,13.12
+IT00011,Biokos Personal Care Spicy,Personal Care,Biokos,2070304950580,35.93,41.77
+IT00012,Safi Baby Care Spicy,Baby Care,Safi,0849550065326,27.15,31.56
+IT00013,F&N Baby Care Spicy,Baby Care,F&N,3216499065055,21.2,24.64
+IT00014,Dutch Lady Snacks Family Pack,Snacks,Dutch Lady,1302245398565,4.65,5.41
+IT00015,Vitagen Frozen Foods Family Pack,Frozen Foods,Vitagen,9182871223685,23.0,26.74
+IT00016,Dutch Lady Household Original,Household,Dutch Lady,2906803191475,5.1,5.93
+IT00017,Dutch Lady Beverages Family Pack,Beverages,Dutch Lady,1961035403990,21.75,25.28
+IT00018,F&N Baby Care Spicy,Baby Care,F&N,3663589792171,3.33,3.87
+IT00019,Ayam Brand Frozen Foods Spicy,Frozen Foods,Ayam Brand,4197467217304,4.24,4.93
+IT00020,F&N Beverages Mini,Beverages,F&N,1938826320735,10.37,12.05
+IT00021,Massimo Household Family Pack,Household,Massimo,6830825905374,41.81,48.6
+IT00022,Mamee Groceries Spicy,Groceries,Mamee,9181045869714,6.12,7.11
+IT00023,Gardenia Local Delicacies Mini,Local Delicacies,Gardenia,9966195636516,77.22,89.76
+IT00024,Ayam Brand Frozen Foods Original,Frozen Foods,Ayam Brand,3715483276346,3.95,4.59
+IT00025,Maggi Health Supplements Original,Health Supplements,Maggi,5797626609238,66.22,76.98
+IT00026,Gardenia Groceries Original,Groceries,Gardenia,1096748573316,18.42,21.41
+IT00027,Mamee Local Delicacies Spicy,Local Delicacies,Mamee,8887286459114,55.9,64.98
+IT00028,Safi Snacks Spicy,Snacks,Safi,5537488494184,7.16,8.32
+IT00029,Biokos Dairy Original,Dairy,Biokos,7827424723801,9.7,11.28
+IT00030,Massimo Personal Care Mini,Personal Care,Massimo,3124340837908,41.63,48.39
+IT00031,Massimo Health Supplements Original,Health Supplements,Massimo,5492388577842,32.4,37.66
+IT00032,Maggi Snacks Family Pack,Snacks,Maggi,4367789959560,21.0,24.41
+IT00033,Ayam Brand Household Spicy,Household,Ayam Brand,4812343829484,27.86,32.39
+IT00034,Dettol Snacks Spicy,Snacks,Dettol,7092090028624,4.75,5.52
+IT00035,Vitagen Dairy Family Pack,Dairy,Vitagen,1942369771359,21.18,24.62
+IT00036,Dutch Lady Household Spicy,Household,Dutch Lady,5939158263687,7.11,8.26
+IT00037,Ayam Brand Health Supplements Family Pack,Health Supplements,Ayam Brand,5056060444384,25.62,29.78
+IT00038,Biokos Dairy Original,Dairy,Biokos,1156697485329,16.93,19.68
+IT00039,Vitagen Beverages Original,Beverages,Vitagen,2475634343225,3.06,3.56
+IT00040,Massimo Personal Care Spicy,Personal Care,Massimo,8551245247402,21.04,24.46
+IT00041,F&N Health Supplements Spicy,Health Supplements,F&N,4263539534327,71.39,82.99
+IT00042,Biokos Beverages Original,Beverages,Biokos,3796172575982,21.92,25.48
+IT00043,Mamee Local Delicacies Family Pack,Local Delicacies,Mamee,3371002967102,64.15,74.57
+IT00044,Maggi Health Supplements Original,Health Supplements,Maggi,4392810456189,31.75,36.91
+IT00045,Mamee Local Delicacies Family Pack,Local Delicacies,Mamee,0254567392545,16.05,18.66
+IT00046,Dettol Household Mini,Household,Dettol,0907620251464,23.27,27.05
+IT00047,Biokos Beverages Original,Beverages,Biokos,0228022758112,10.49,12.19
+IT00048,Julie's Personal Care Family Pack,Personal Care,Julie's,1210758944342,16.66,19.37
+IT00049,Julie's Dairy Family Pack,Dairy,Julie's,5458760268507,24.18,28.11
+IT00050,Safi Baby Care Family Pack,Baby Care,Safi,8571542948944,22.97,26.7
+IT00051,Ayam Brand Snacks Spicy,Snacks,Ayam Brand,3114464700217,7.58,8.81
+IT00052,Massimo Groceries Spicy,Groceries,Massimo,8808405644021,10.47,12.17
+IT00053,Massimo Personal Care Mini,Personal Care,Massimo,2840677304281,43.87,51.0
+IT00054,Dutch Lady Beverages Mini,Beverages,Dutch Lady,9619274444115,24.95,29.0
+IT00055,Dutch Lady Baby Care Family Pack,Baby Care,Dutch Lady,7107837207856,23.95,27.84
+IT00056,Dutch Lady Personal Care Spicy,Personal Care,Dutch Lady,8443739892384,34.3,39.87
+IT00057,F&N Beverages Family Pack,Beverages,F&N,3493976191931,14.57,16.94
+IT00058,Gardenia Frozen Foods Spicy,Frozen Foods,Gardenia,8090189072630,24.49,28.47
+IT00059,Adabi Frozen Foods Spicy,Frozen Foods,Adabi,3659684562622,7.07,8.22
+IT00060,Gardenia Local Delicacies Mini,Local Delicacies,Gardenia,0977112030342,75.27,87.5
+IT00061,Mamee Personal Care Family Pack,Personal Care,Mamee,4611636452646,5.96,6.93
+IT00062,Gardenia Frozen Foods Family Pack,Frozen Foods,Gardenia,8425099296439,17.62,20.48
+IT00063,F&N Beverages Spicy,Beverages,F&N,8133260830879,16.63,19.33
+IT00064,Safi Local Delicacies Spicy,Local Delicacies,Safi,9789728212776,58.54,68.05
+IT00065,Mamee Beverages Original,Beverages,Mamee,1060703193427,2.22,2.58
+IT00066,Gardenia Local Delicacies Mini,Local Delicacies,Gardenia,8352199928840,33.45,38.88
+IT00067,F&N Personal Care Original,Personal Care,F&N,7266385032137,35.36,41.1
+IT00068,Adabi Baby Care Spicy,Baby Care,Adabi,2363646936664,13.16,15.3
+IT00069,Gardenia Dairy Family Pack,Dairy,Gardenia,7610091253396,22.93,26.65
+IT00070,F&N Health Supplements Spicy,Health Supplements,F&N,5578686926242,31.53,36.65
+IT00071,Dettol Baby Care Original,Baby Care,Dettol,3939602998026,8.54,9.93
+IT00072,Dutch Lady Household Mini,Household,Dutch Lady,9039728558277,44.32,51.52
+IT00073,Dettol Beverages Spicy,Beverages,Dettol,5299571813750,11.66,13.55
+IT00074,Massimo Household Family Pack,Household,Massimo,2141043542679,43.45,50.51
+IT00075,Dutch Lady Baby Care Original,Baby Care,Dutch Lady,6360984174831,29.26,34.01
+IT00076,Massimo Local Delicacies Spicy,Local Delicacies,Massimo,1657352547168,19.97,23.21
+IT00077,Lifebuoy Health Supplements Family Pack,Health Supplements,Lifebuoy,5848483733296,29.59,34.4
+IT00078,Maggi Health Supplements Family Pack,Health Supplements,Maggi,4004731095648,13.07,15.19
+IT00079,Dettol Groceries Spicy,Groceries,Dettol,9490231514835,7.32,8.51
+IT00080,Maggi Health Supplements Original,Health Supplements,Maggi,1224576656660,69.19,80.43
+IT00081,Maggi Dairy Family Pack,Dairy,Maggi,2793116079053,14.15,16.45
+IT00082,Adabi Health Supplements Mini,Health Supplements,Adabi,4133958170044,72.69,84.5
+IT00083,Dutch Lady Baby Care Original,Baby Care,Dutch Lady,6425316553290,15.38,17.88
+IT00084,Lifebuoy Groceries Family Pack,Groceries,Lifebuoy,2977214415256,19.2,22.32
+IT00085,Massimo Baby Care Spicy,Baby Care,Massimo,3374403446249,18.68,21.71
+IT00086,F&N Baby Care Spicy,Baby Care,F&N,1946341440872,16.65,19.35
+IT00087,Mamee Snacks Original,Snacks,Mamee,7065173961121,16.66,19.37
+IT00088,F&N Groceries Family Pack,Groceries,F&N,1709645568693,11.07,12.87
+IT00089,Mamee Baby Care Family Pack,Baby Care,Mamee,9344675304032,18.98,22.06
+IT00090,Dettol Snacks Original,Snacks,Dettol,6905359709516,3.43,3.99
+IT00091,Julie's Snacks Original,Snacks,Julie's,5948890607956,17.24,20.04
+IT00092,F&N Groceries Original,Groceries,F&N,3937606335328,5.01,5.82
+IT00093,Gardenia Household Mini,Household,Gardenia,9610693661705,16.67,19.38
+IT00094,Gardenia Local Delicacies Mini,Local Delicacies,Gardenia,6317999065039,69.56,80.86
+IT00095,Ayam Brand Dairy Mini,Dairy,Ayam Brand,3719127557568,28.0,32.55
+IT00096,Dutch Lady Local Delicacies Spicy,Local Delicacies,Dutch Lady,6511669703796,37.51,43.6
+IT00097,Mamee Health Supplements Mini,Health Supplements,Mamee,7722979165477,68.23,79.31
+IT00098,Mamee Dairy Mini,Dairy,Mamee,5411680439751,11.81,13.73
+IT00099,Biokos Health Supplements Mini,Health Supplements,Biokos,0145809889433,41.69,48.46
+IT00100,Safi Baby Care Family Pack,Baby Care,Safi,3023073109487,9.31,10.82
+IT00101,Dutch Lady Beverages Mini,Beverages,Dutch Lady,4690219647212,23.7,27.55
+IT00102,Adabi Groceries Original,Groceries,Adabi,6608456572035,5.13,5.96
+IT00103,Ayam Brand Dairy Mini,Dairy,Ayam Brand,1653957508033,23.79,27.65
+IT00104,Adabi Dairy Spicy,Dairy,Adabi,7302615713368,5.94,6.9
+IT00105,Dettol Baby Care Spicy,Baby Care,Dettol,6941179027833,5.85,6.8
+IT00106,Dettol Household Mini,Household,Dettol,3840628062744,22.98,26.71
+IT00107,Adabi Snacks Original,Snacks,Adabi,4931637204491,9.22,10.72
+IT00108,Adabi Baby Care Original,Baby Care,Adabi,2132471447964,6.26,7.28
+IT00109,Lifebuoy Frozen Foods Family Pack,Frozen Foods,Lifebuoy,6706457108641,12.67,14.73
+IT00110,Dutch Lady Snacks Original,Snacks,Dutch Lady,2639014340133,19.72,22.92
+IT00111,Adabi Groceries Family Pack,Groceries,Adabi,2901591772669,12.39,14.4
+IT00112,Gardenia Snacks Family Pack,Snacks,Gardenia,2101798996752,12.66,14.72
+IT00113,Safi Household Original,Household,Safi,2177132972435,39.1,45.45
+IT00114,Safi Snacks Original,Snacks,Safi,4918037444513,4.08,4.74
+IT00115,Maggi Groceries Family Pack,Groceries,Maggi,0451855715885,20.57,23.91
+IT00116,Julie's Household Spicy,Household,Julie's,3192952019266,17.17,19.96
+IT00117,Dettol Local Delicacies Mini,Local Delicacies,Dettol,0655169390809,59.33,68.97
+IT00118,Mamee Dairy Spicy,Dairy,Mamee,7225608563284,19.29,22.42
+IT00119,Biokos Dairy Original,Dairy,Biokos,4614431839337,8.81,10.24
+IT00120,Mamee Health Supplements Original,Health Supplements,Mamee,5121410984998,69.96,81.32
+IT00121,Julie's Local Delicacies Family Pack,Local Delicacies,Julie's,9711948403425,20.38,23.69
+IT00122,Biokos Local Delicacies Mini,Local Delicacies,Biokos,0258620112340,59.78,69.49
+IT00123,Lifebuoy Snacks Original,Snacks,Lifebuoy,0532345866103,24.27,28.21
+IT00124,Dutch Lady Dairy Mini,Dairy,Dutch Lady,9531640078518,13.7,15.93
+IT00125,F&N Groceries Spicy,Groceries,F&N,1933685554540,3.13,3.64
+IT00126,Dutch Lady Personal Care Mini,Personal Care,Dutch Lady,3143886526952,16.95,19.7
+IT00127,Mamee Personal Care Spicy,Personal Care,Mamee,0457738257144,37.8,43.94
+IT00128,Mamee Household Original,Household,Mamee,4256487755943,11.95,13.89
+IT00129,Biokos Dairy Original,Dairy,Biokos,9455686824922,28.71,33.37
+IT00130,Biokos Dairy Family Pack,Dairy,Biokos,9977644597255,26.07,30.3
+IT00131,Dettol Personal Care Spicy,Personal Care,Dettol,8337109096728,27.24,31.66
+IT00132,Lifebuoy Dairy Spicy,Dairy,Lifebuoy,2521720922134,17.85,20.75
+IT00133,Dettol Snacks Mini,Snacks,Dettol,6199168467220,4.18,4.86
+IT00134,Julie's Frozen Foods Family Pack,Frozen Foods,Julie's,7627809489087,5.75,6.68
+IT00135,Adabi Beverages Family Pack,Beverages,Adabi,1782026934658,20.26,23.55
+IT00136,Dutch Lady Local Delicacies Family Pack,Local Delicacies,Dutch Lady,1528376703261,18.5,21.5
+IT00137,Biokos Health Supplements Spicy,Health Supplements,Biokos,6644340949034,14.32,16.65
+IT00138,Massimo Household Original,Household,Massimo,2355232641698,36.24,42.13
+IT00139,Julie's Frozen Foods Original,Frozen Foods,Julie's,7669329449379,9.0,10.46
+IT00140,Gardenia Personal Care Mini,Personal Care,Gardenia,7887657553918,12.93,15.03
+IT00141,Lifebuoy Local Delicacies Mini,Local Delicacies,Lifebuoy,9251846748401,38.04,44.22
+IT00142,Mamee Dairy Spicy,Dairy,Mamee,4556302020475,21.53,25.03
+IT00143,Dettol Health Supplements Original,Health Supplements,Dettol,0894211679384,75.63,87.91
+IT00144,Julie's Dairy Family Pack,Dairy,Julie's,9309818193198,5.27,6.13
+IT00145,Dutch Lady Groceries Original,Groceries,Dutch Lady,7947432411870,15.48,17.99
+IT00146,Biokos Groceries Mini,Groceries,Biokos,6698205468204,23.1,26.85
+IT00147,Mamee Health Supplements Original,Health Supplements,Mamee,5771929557828,15.25,17.73
+IT00148,F&N Health Supplements Family Pack,Health Supplements,F&N,9542557165036,79.8,92.76
+IT00149,Lifebuoy Personal Care Mini,Personal Care,Lifebuoy,3564215228140,12.91,15.01
+IT00150,Julie's Health Supplements Spicy,Health Supplements,Julie's,4453230435803,55.22,64.19
+IT00151,Ayam Brand Snacks Original,Snacks,Ayam Brand,6008562293921,20.61,23.96
+IT00152,Mamee Dairy Original,Dairy,Mamee,7779673232463,5.48,6.37
+IT00153,Dutch Lady Frozen Foods Spicy,Frozen Foods,Dutch Lady,3848773230870,25.88,30.08
+IT00154,Maggi Baby Care Spicy,Baby Care,Maggi,5572125259374,24.84,28.87
+IT00155,Massimo Health Supplements Family Pack,Health Supplements,Massimo,7747315189958,18.58,21.6
+IT00156,Vitagen Household Original,Household,Vitagen,0800160124069,42.69,49.62
+IT00157,Adabi Groceries Mini,Groceries,Adabi,9605407525649,3.16,3.67
+IT00158,Vitagen Snacks Original,Snacks,Vitagen,1952623709426,23.26,27.04
+IT00159,Dutch Lady Local Delicacies Family Pack,Local Delicacies,Dutch Lady,2809604346708,40.32,46.87
+IT00160,Gardenia Baby Care Mini,Baby Care,Gardenia,6399892965296,22.56,26.22
+IT00161,Dettol Frozen Foods Mini,Frozen Foods,Dettol,2561802188925,16.4,19.06
+IT00162,Gardenia Baby Care Mini,Baby Care,Gardenia,5865377607302,13.33,15.5
+IT00163,Maggi Health Supplements Family Pack,Health Supplements,Maggi,0665936742531,39.87,46.35
+IT00164,Adabi Personal Care Original,Personal Care,Adabi,5372202371330,19.16,22.27
+IT00165,Ayam Brand Groceries Mini,Groceries,Ayam Brand,9471045510557,22.89,26.61
+IT00166,Maggi Groceries Spicy,Groceries,Maggi,8047759256122,8.32,9.67
+IT00167,Safi Local Delicacies Family Pack,Local Delicacies,Safi,1122739746410,41.22,47.92
+IT00168,Vitagen Personal Care Mini,Personal Care,Vitagen,3838448653664,10.95,12.73
+IT00169,Maggi Dairy Family Pack,Dairy,Maggi,1337697327391,19.58,22.76
+IT00170,Vitagen Beverages Spicy,Beverages,Vitagen,9170792780876,16.19,18.82
+IT00171,Mamee Snacks Mini,Snacks,Mamee,1321434555984,16.89,19.63
+IT00172,Gardenia Groceries Original,Groceries,Gardenia,0978591261656,13.47,15.66
+IT00173,Mamee Household Family Pack,Household,Mamee,6937102756234,40.31,46.86
+IT00174,Massimo Groceries Mini,Groceries,Massimo,6619429087337,13.02,15.13
+IT00175,Safi Baby Care Mini,Baby Care,Safi,5307400703189,5.37,6.24
+IT00176,Adabi Groceries Family Pack,Groceries,Adabi,7553447616378,10.81,12.57
+IT00177,Ayam Brand Groceries Spicy,Groceries,Ayam Brand,4402277575311,11.64,13.53
+IT00178,Lifebuoy Beverages Family Pack,Beverages,Lifebuoy,6493331341689,16.78,19.51
+IT00179,Vitagen Beverages Original,Beverages,Vitagen,5632131355445,20.34,23.64
+IT00180,Ayam Brand Frozen Foods Spicy,Frozen Foods,Ayam Brand,9911218689413,9.73,11.31
+IT00181,Vitagen Dairy Original,Dairy,Vitagen,5644741572022,29.84,34.69
+IT00182,Dutch Lady Household Original,Household,Dutch Lady,7574552595774,26.75,31.09
+IT00183,Maggi Groceries Family Pack,Groceries,Maggi,2476280280818,2.45,2.85
+IT00184,Massimo Groceries Mini,Groceries,Massimo,2768646788555,10.8,12.55
+IT00185,Gardenia Snacks Spicy,Snacks,Gardenia,1925959817402,18.41,21.4
+IT00186,Lifebuoy Beverages Original,Beverages,Lifebuoy,6711328316630,13.03,15.15
+IT00187,Biokos Household Mini,Household,Biokos,7747684458809,36.26,42.15
+IT00188,Vitagen Local Delicacies Mini,Local Delicacies,Vitagen,6687398432518,34.08,39.62
+IT00189,Ayam Brand Frozen Foods Mini,Frozen Foods,Ayam Brand,7870680914949,18.27,21.24
+IT00190,Massimo Dairy Spicy,Dairy,Massimo,9838803066067,11.68,13.58
+IT00191,F&N Personal Care Mini,Personal Care,F&N,7400205540318,15.82,18.39
+IT00192,Lifebuoy Dairy Family Pack,Dairy,Lifebuoy,6420813238866,3.7,4.3
+IT00193,F&N Baby Care Original,Baby Care,F&N,0561327964281,19.12,22.23
+IT00194,Mamee Groceries Mini,Groceries,Mamee,1734726267290,2.67,3.1
+IT00195,Gardenia Frozen Foods Original,Frozen Foods,Gardenia,8826136772326,24.89,28.93
+IT00196,Dettol Baby Care Spicy,Baby Care,Dettol,0803338451490,10.59,12.31
+IT00197,Dettol Household Original,Household,Dettol,5029932774465,37.35,43.42
+IT00198,Biokos Personal Care Mini,Personal Care,Biokos,1009913576634,23.87,27.75
+IT00199,Dutch Lady Beverages Spicy,Beverages,Dutch Lady,9229160661010,10.22,11.88
+IT00200,Ayam Brand Frozen Foods Spicy,Frozen Foods,Ayam Brand,4358237871834,18.77,21.82

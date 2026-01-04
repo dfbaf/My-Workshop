@@ -1,0 +1,2 @@
+SalesData.csv filter=lfs diff=lfs merge=lfs -text
+PowerQuery/Data/SalesData.csv filter=lfs diff=lfs merge=lfs -text
