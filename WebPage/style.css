@@ -1,0 +1,410 @@
+/* === Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fafafa;
+  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* === Header === */
+header {
+  background: linear-gradient(135deg, #4B8BBE, #306998);
+  color: white;
+  padding: 2.5rem 0;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #FFD43B 0%, transparent 70%);
+  opacity: 0.15;
+  z-index: 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.tagline {
+  text-align: center;
+  font-style: italic;
+  margin: 1.5rem 0 2.5rem;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* === Workshop Cards (for detail pages) === */
+.workshop-card {
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid #4B8BBE;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.workshop-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.496);
+}
+
+.workshop-card h2 {
+  color: #306998;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+}
+
+.workshop-card h2::before {
+  content: "📅";
+  font-size: 1.4rem;
+}
+
+ul {
+  padding-left: 1.4rem;
+  margin: 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.check::before {
+  content: "✔ ";
+  color: #4CAF50;
+  font-weight: bold;
+  position: absolute;
+  left: -1.4rem;
+}
+
+code {
+  background-color: #f1f1f1;
+  padding: 0.15rem 0.3rem;
+  border-radius: 4px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.95em;
+  border: 1px solid #ddd;
+}
+
+/* === Highlight Box === */
+.highlight {
+  background: linear-gradient(to right, #fff8e1, #fffde7);
+  padding: 1.8rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+  border: 1px solid #ffe082;
+  box-shadow: inset 0 0 8px rgba(255, 212, 59, 0.2);
+}
+
+.highlight h3 {
+  color: #e65100;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.highlight h3::before {
+  content: "✨";
+  font-size: 1.2rem;
+}
+
+/* === Footer Quote === */
+.footer-quote {
+  text-align: center;
+  font-style: italic;
+  margin-top: 2.5rem;
+  color: #444;
+  font-size: 1.15rem;
+  position: relative;
+  padding: 1rem;
+  background: linear-gradient(to right, #f8f9fa, #ffffff);
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2.5rem auto 1rem;
+}
+
+.footer-quote::before,
+.footer-quote::after {
+  content: "“";
+  font-size: 1.8rem;
+  color: #4B8BBE;
+  position: absolute;
+  top: -0.5rem;
+}
+
+.footer-quote::before {
+  left: -1.2rem;
+}
+
+.footer-quote::after {
+  content: "”";
+  right: -1.2rem;
+  bottom: -0.5rem;
+  top: auto;
+}
+
+.author {
+  display: block;
+  text-align: right;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #306998;
+  font-size: 1.05rem;
+}
+
+/* === Home Page Specific Styles === */
+.workshop-grid {
+  display: grid;
+  /* Force a maximum of 4 tiles per row on wide screens */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Center a single leftover tile in the last row (e.g., a 5th tile) */
+.workshop-grid > .workshop-tile:nth-child(4n+1):nth-last-child(1) {
+  grid-column: 2 / span 2;
+}
+
+/* Responsive: 2 columns for medium screens, 1 column for narrow screens */
+@media (max-width: 900px) {
+  .workshop-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .workshop-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.workshop-tile {
+  background: white;
+  border: 2px solid #7878784b; /* ← This adds a thicker outline */
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative; /* Needed for background positioning */
+}
+
+.workshop-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.451);
+}
+
+.workshop-tile h3 {
+  margin: 0.8rem 0 0.5rem;
+  color: #306998;
+}
+
+.workshop-tile .emoji {
+  font-size: 2.5rem;
+}
+
+/* Icon for tiles when using an SVG image */
+.tile-icon {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Back link */
+.back-link {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.back-link a {
+  color: #306998;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* === Python tile specific hover effect === */
+.python-tile {
+  position: relative;
+  transition: all 0.8s ease;
+}
+
+.python-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('image/Python-logo-notext.svg') no-repeat center;
+  background-size: 80%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  z-index: 0;
+}
+
+.python-tile:hover::before {
+  opacity: 0.1;
+}
+
+.python-tile > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Power Query tile specific hover effect === */
+.powerquery-tile {
+  position: relative;
+  transition: all 0.8s ease;
+}
+
+.powerquery-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('image/Microsoft_Office_Excel_Logo.svg') no-repeat center;
+  background-size: 80%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  z-index: 0;
+}
+
+.powerquery-tile:hover::before {
+  opacity: 0.1;
+}
+
+.powerquery-tile > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Power BI tile specific hover effect === */
+.powerbi-tile {
+  position: relative;
+  transition: all 0.8s ease;
+}
+
+.powerbi-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('image/power-bi-icon.svg') no-repeat center;
+  background-size: 80%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  z-index: 0;
+}
+
+.powerbi-tile:hover::before {
+  opacity: 0.1;
+}
+
+.powerbi-tile > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Power Automate tile specific hover effect === */
+.powerautomate-tile {
+  position: relative;
+  transition: all 0.8s ease;
+}
+
+.powerautomate-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('image/PowerAutomate_scalable.svg') no-repeat center;
+  background-size: 80%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  z-index: 0;
+}
+
+.powerautomate-tile:hover::before {
+  opacity: 0.1;
+}
+
+.powerautomate-tile > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .workshop-card {
+    padding: 1.2rem;
+  }
+  .footer-quote::before,
+  .footer-quote::after {
+    display: none;
+  }
+  .footer-quote {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}
+
+/* === Accessibility improvements === */
+/* Focus styles for keyboard navigation */
+.workshop-tile:focus,
+a:focus {
+  outline: 2px solid #306998;
+  outline-offset: 2px;
+}
+
+/* Ensure sufficient contrast for accessibility */
+.workshop-tile h3 {
+  color: #306998;
+  font-weight: 600; /* Increased font weight for better readability */
+}
