@@ -25,7 +25,7 @@ jobs:
       - name: Build site
         run: |
           mkdir -p _site
-          cp -r Webpage/* _site/
+          cp -r WebPage/* _site/
           touch _site/.nojekyll
 
       - name: Upload artifact
