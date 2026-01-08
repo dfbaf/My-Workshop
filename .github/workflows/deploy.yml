@@ -1,4 +1,4 @@
-name: Deploy Python Workshop
+name: Workshop Hub
 
 on:
   push:
