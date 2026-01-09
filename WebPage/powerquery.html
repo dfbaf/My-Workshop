@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Power Query Workshop</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://powerquery.microsoft.com/favicon.ico">
+  <link rel="icon" href="image/Microsoft_Office_Excel_Logo.svg">
 </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>🧹 Power Query Workshop – Days 1 & 2</h1>
+<body class="theme-powerquery">
+<header>
+  <div class="container header-row">
+    <img src="image/Microsoft_Office_Excel_Logo.svg" alt="Excel logo" class="logo">
+    <div class="header-text">
+      <h1>Power Query Workshop – Days 1 & 2</h1>
       <p class="subtitle">Clean, transform, and combine data in minutes</p>
     </div>
-  </header>
+  </div>
+</header>
 
   <div class="container">
     <p class="tagline">Master Power Query—the hidden gem inside Excel and Power BI—to turn messy data into analysis-ready tables.</p>
@@ -23,11 +26,53 @@
       <ul>
         <li><strong>Works in Excel AND Power BI</strong></li>
         <li><strong>Repeatable transformations</strong> – refresh with one click</li>
-        <li><strong>No formulas needed</strong> – point-and-click + M language basics</li>
+        <li><strong>No formulas needed</strong> – intuitive UI + optional M language</li>
         <li><strong>Handle 100 or 100,000 rows</strong> with ease</li>
       </ul>
     </div>
 
     <div class="workshop-card">
-      <h2>Day 1: Cleaning & Shaping Data</h2>
-      <p><strong>Goal:</strong
+      <h2>Day 1: Power Query Foundations – Get Data & Clean It Fast</h2>
+      <p><strong>Goal:</strong> Import, inspect, and clean real-world datasets using Power Query’s interface.</p>
+      <ul>
+        <li class="check">Connect to Data – Excel, CSV, folders, web sources</li>
+        <li class="check">The Power Query Editor – Navigate the ribbon & query pane</li>
+        <li class="check">Remove & Keep Rows – Headers, errors, blanks, top/bottom N</li>
+        <li class="check">Rename, Reorder & Remove Columns</li>
+        <li class="check">Split & Merge Columns – by delimiter, position, or format</li>
+        <li class="check">Change Data Types – Text, Number, Date, Boolean</li>
+        <li class="check">Replace Values – Fix typos, standardize categories</li>
+        <li class="check">Handle Missing Data – Fill down, remove, or flag</li>
+        <li class="check">Add Custom Columns – Simple calculations & conditional logic</li>
+        <li class="check">Practice Dataset: Sales Transactions (messy .csv)</li>
+      </ul>
+    </div>
+
+    <div class="workshop-card">
+      <h2>Day 2: Advanced Transformations & Combining Data</h2>
+      <p><strong>Goal:</strong> Build robust, reusable data models by merging, shaping, and automating workflows.</p>
+      <p><em>Datasets:</em> <code>customers.csv</code>, <code>orders.csv</code>, and <code>regions.xlsx</code></p>
+      <ul>
+        <li class="check">Pivot & Unpivot – Reshape wide vs. long data</li>
+        <li class="check">Group By – Summarize sales, counts, averages</li>
+        <li class="check">Merge Queries – Join tables like SQL (inner, left, full)</li>
+        <li class="check">Append Queries – Stack monthly files or similar tables</li>
+        <li class="check">Parameters & Dynamic Paths – Make queries flexible</li>
+        <li class="check">Introduction to M Language – View & tweak auto-generated code</li>
+        <li class="check">Error Handling – Identify and resolve transformation errors</li>
+        <li class="check">Final Project: End-to-end pipeline from raw files to clean output</li>
+      </ul>
+    </div>
+
+    <p class="footer-quote">
+      The best way to learn Power Query? Click, transform, refresh—and watch your data come alive!
+      <span class="author">— dfbaf</span>
+    </p>
+
+    <p class="back-link">
+      ← <a href="index.html"> 🚀 Back to The Hands-On Hub</a>
+    </p>
+
+  </div>
+</body>
+</html>
