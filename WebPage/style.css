@@ -19,6 +19,115 @@ body {
   padding: 0 1.5rem;
 }
 
+/* === Sticky Navigation – Logo Pills with Themed Hover === */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: transparent;
+  box-shadow: none;
+  margin-top: -1px;
+  padding: 0;
+  z-index: 1000;
+}
+
+.sticky-nav .container {
+  display: flex;
+  justify-content: center;
+  padding: 0.3rem 0;
+}
+
+.sticky-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.9rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sticky-nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #306998;
+  font-weight: 600;
+  font-size: 1.02rem;
+  padding: 0.55rem 1.2rem;
+  border-radius: 50px;
+  background: white;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  gap: 0.5rem;
+}
+
+/* Logo styling */
+.sticky-nav a img {
+  width: 1.1rem;
+  height: 1.1rem;
+  filter: grayscale(0%) opacity(0.85);
+  transition: filter 0.2s ease;
+}
+
+.sticky-nav a:hover img,
+.sticky-nav a:focus img {
+  filter: grayscale(0%) opacity(1);
+}
+
+/* Base hover — color will be overridden by themed classes */
+.sticky-nav a:hover,
+.sticky-nav a:focus {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(75, 139, 190, 0.3);
+  outline: none;
+}
+
+/* === Themed Hover Backgrounds === */
+.sticky-nav a.nav-home:hover,
+.sticky-nav a.nav-home:focus {
+  background: linear-gradient(135deg, #4B8BBE, #306998);
+}
+
+.sticky-nav a.nav-python:hover,
+.sticky-nav a.nav-python:focus {
+  background: linear-gradient(135deg, #173147, #1f4f73);
+}
+
+.sticky-nav a.nav-powerquery:hover,
+.sticky-nav a.nav-powerquery:focus {
+  background: linear-gradient(135deg, #06140c, #048c4a);
+}
+
+.sticky-nav a.nav-powerbi:hover,
+.sticky-nav a.nav-powerbi:focus {
+  background: linear-gradient(135deg, #af8300, #e2b102);
+}
+
+.sticky-nav a.nav-automate:hover,
+.sticky-nav a.nav-automate:focus {
+  background: linear-gradient(135deg, #111a58, #00788d);
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 600px) {
+  .sticky-nav .container {
+    padding: 0.3rem 0;
+  }
+  .sticky-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .sticky-nav a {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    transform: none !important;
+  }
+}
+
 /* === Header === */
 header {
   background: linear-gradient(135deg, #4B8BBE, #306998);
@@ -26,10 +135,21 @@ header {
   padding: 2.5rem 0;
   text-align: center;
   border-radius: 0 0 20px 20px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.6rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
+}
+
+header::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #4b8abe00, transparent);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 header::before {
@@ -58,18 +178,18 @@ h1 {
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  text-align: left; /* Left-align all subtitles by default */
+  text-align: left;
 }
 
 .tagline {
-  text-align: left; /* Changed from center to left for consistency */
+  text-align: left;
   font-style: italic;
   margin: 1.5rem 0 2.5rem;
   color: #555;
   font-size: 1.1rem;
 }
 
-/* === Workshop Cards (for detail pages) === */
+/* === Workshop Cards === */
 .workshop-card {
   background: rgb(255, 255, 255);
   border-radius: 12px;
@@ -201,21 +321,18 @@ code {
   font-size: 1.05rem;
 }
 
-/* === Home Page Specific Styles === */
+/* === Home Page Grid === */
 .workshop-grid {
   display: grid;
-  /* Force a maximum of 4 tiles per row on wide screens */
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-/* Center a single leftover tile in the last row (e.g., a 5th tile) */
 .workshop-grid > .workshop-tile:nth-child(4n+1):nth-last-child(1) {
   grid-column: 2 / span 2;
 }
 
-/* Responsive: 2 columns for medium screens, 1 column for narrow screens */
 @media (max-width: 900px) {
   .workshop-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -229,7 +346,7 @@ code {
 
 .workshop-tile {
   background: white;
-  border: 2px solid #7878784b; /* Thicker outline for better visibility */
+  border: 2px solid #7878784b;
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
@@ -238,7 +355,7 @@ code {
   text-decoration: none;
   color: inherit;
   display: block;
-  position: relative; /* Needed for background positioning */
+  position: relative;
 }
 
 .workshop-tile:hover {
@@ -247,7 +364,7 @@ code {
 }
 
 .workshop-tile:active {
-  transform: translateY(-5px) scale(0.98); /* Press-down effect */
+  transform: translateY(-5px) scale(0.98);
 }
 
 .workshop-tile h3 {
@@ -255,11 +372,6 @@ code {
   color: #306998;
 }
 
-.workshop-tile .emoji {
-  font-size: 2.5rem;
-}
-
-/* Icon for tiles when using an SVG image */
 .tile-icon {
   width: 3rem;
   height: 3rem;
@@ -283,102 +395,45 @@ code {
   text-decoration: underline;
 }
 
-/* === Tile-specific hover effects with background images === */
-.python-tile {
-  position: relative;
-  transition: all 0.8s ease;
-}
-
-.python-tile::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('image/Python-logo-notext.svg') no-repeat center;
-  background-size: 80%;
-  opacity: 0;
-  transition: opacity 0.8s ease;
-  z-index: 0;
-}
-
-.python-tile:hover::before {
-  opacity: 0.1;
-}
-
-.python-tile > * {
-  position: relative;
-  z-index: 1;
-}
-
-.powerquery-tile {
-  position: relative;
-  transition: all 0.8s ease;
-}
-
-.powerquery-tile::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('image/Microsoft_Office_Excel_Logo.svg') no-repeat center;
-  background-size: 80%;
-  opacity: 0;
-  transition: opacity 0.8s ease;
-  z-index: 0;
-}
-
-.powerquery-tile:hover::before {
-  opacity: 0.1;
-}
-
-.powerquery-tile > * {
-  position: relative;
-  z-index: 1;
-}
-
-.powerbi-tile {
-  position: relative;
-  transition: all 0.8s ease;
-}
-
-.powerbi-tile::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('image/power-bi-icon.svg') no-repeat center;
-  background-size: 80%;
-  opacity: 0;
-  transition: opacity 0.8s ease;
-  z-index: 0;
-}
-
-.powerbi-tile:hover::before {
-  opacity: 0.1;
-}
-
-.powerbi-tile > * {
-  position: relative;
-  z-index: 1;
-}
-
+/* === Tile Background Effects === */
+.python-tile,
+.powerquery-tile,
+.powerbi-tile,
 .powerautomate-tile {
   position: relative;
   transition: all 0.8s ease;
 }
 
+.python-tile::before,
+.powerquery-tile::before,
+.powerbi-tile::before,
 .powerautomate-tile::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('image/PowerAutomate_scalable.svg') no-repeat center;
   background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 0;
   transition: opacity 0.8s ease;
   z-index: 0;
 }
 
+.python-tile::before { background-image: url('image/Python-logo-notext.svg'); }
+.powerquery-tile::before { background-image: url('image/Microsoft_Office_Excel_Logo.svg'); }
+.powerbi-tile::before { background-image: url('image/power-bi-icon.svg'); }
+.powerautomate-tile::before { background-image: url('image/PowerAutomate_scalable.svg'); }
+
+.python-tile:hover::before,
+.powerquery-tile:hover::before,
+.powerbi-tile:hover::before,
 .powerautomate-tile:hover::before {
   opacity: 0.1;
 }
 
+.python-tile > *,
+.powerquery-tile > *,
+.powerbi-tile > *,
 .powerautomate-tile > * {
   position: relative;
   z-index: 1;
@@ -386,64 +441,30 @@ code {
 
 /* === Responsive Design === */
 @media (max-width: 600px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-  .subtitle {
-    font-size: 1rem;
-    white-space: normal !important;
-    word-wrap: break-word;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    text-align: left !important; /* Keep left alignment on mobile */
-  }
-  .workshop-card {
-    padding: 1.2rem;
-  }
-  .footer-quote {
-    padding: 0.8rem;
-    font-size: 1rem;
-  }
-  .footer-quote::before,
-  .footer-quote::after {
-    display: none;
-  }
-  
-  /* Fix header overflow on mobile */
+  h1 { font-size: 1.8rem; }
+  .subtitle { font-size: 1rem; text-align: left !important; }
+  .workshop-card { padding: 1.2rem; }
+  .footer-quote { padding: 0.8rem; font-size: 1rem; }
+  .footer-quote::before, .footer-quote::after { display: none; }
   .header-row {
     flex-direction: column;
-    align-items: flex-start; /* Changed from center to flex-start */
-    text-align: left; /* Left-align text in header row */
+    align-items: flex-start;
+    text-align: left;
     gap: 8px;
   }
-  
   .header-row .logo {
-    transform: translateY(0) translateX(0); /* Reset previous transforms */
-    width: 40px; /* Slightly smaller on mobile */
+    transform: translateY(0) translateX(0);
+    width: 40px;
   }
-  
-  .header-row .header-text {
-    text-align: left; /* Ensure left text alignment */
-  }
-  
-  /* Center the home page subtitle specifically on mobile */
   .home-page .header-row .subtitle {
     text-align: center !important;
   }
 }
 
-/* === Accessibility improvements === */
-/* Focus styles for keyboard navigation */
-.workshop-tile:focus,
-a:focus {
+/* === Accessibility === */
+.workshop-tile:focus, a:focus {
   outline: 2px solid #306998;
   outline-offset: 2px;
-}
-
-/* Ensure sufficient contrast for accessibility */
-.workshop-tile h3 {
-  color: #306998;
-  font-weight: 600; /* Increased font weight for better readability */
 }
 
 .header-row {
@@ -457,9 +478,7 @@ a:focus {
   width: 48px;
   height: auto;
   flex: 0 0 auto;
-  /* Small nudge adjustment */
-  transform: translateY(2px);
-  transform: translateX(-10px);
+  transform: translateY(2px) translateX(-10px);
 }
 
 .header-row .header-text {
@@ -469,22 +488,20 @@ a:focus {
 .header-row h1 {
   margin: 0;
   line-height: 1.05;
-  font-size: 2.4rem; /* Keep your existing size if needed */
+  font-size: 2.4rem;
 }
 
 .header-row .subtitle {
   margin: 0;
   font-size: 1.2rem;
-  text-align: left; /* Left-align subtitle in header context */
+  text-align: left;
 }
 
-/* NEW: Specific class for home page to center subtitle */
 .home-page .header-row .subtitle {
   text-align: center;
 }
 
 /* === Theme-Specific Styles === */
-/* Python theme (blue + yellow accents) */
 .theme-python {
   --primary: #173147;
   --primary-dark: #1f4f73;
@@ -494,24 +511,23 @@ a:focus {
 }
 .theme-python header { background: linear-gradient(135deg,var(--primary),var(--primary-dark)); color:var(--contrast); }
 .theme-python .workshop-card { border-left-color: var(--primary); }
-.theme-python .workshop-card h2 { color: var(--primary); } /* Title uses primary color */
+.theme-python .workshop-card h2 { color: var(--primary); }
 .theme-python .check::before { color: var(--accent); }
 .theme-python .author { color: var(--primary-dark); }
 .theme-python .highlight { background: linear-gradient(to right,var(--light),#fffef6); border-color: rgba(255,212,59,0.45); }
 .theme-python .footer-quote { border-left-color: var(--primary); }
 
-/* Power Query (Excel) theme */
 .theme-powerquery {
   --primary: #06140c;
   --primary-dark: #048c4a;
-  --accent: #a6e0b8; /* Added accent variable */
+  --accent: #a6e0b8;
   --primary-light: #e9f6ef;
   --contrast: #ffffff;
 }
 .theme-powerquery header { background: linear-gradient(135deg,var(--primary),var(--primary-dark)); color:var(--contrast); }
 .theme-powerquery .workshop-card { border-left-color: var(--primary); }
-.theme-powerquery .workshop-card h2 { color: var(--primary-dark); } /* Title uses primary-dark color */
-.theme-powerquery .check::before { color: var(--accent); } /* Uses accent color like Python */
+.theme-powerquery .workshop-card h2 { color: var(--primary-dark); }
+.theme-powerquery .check::before { color: var(--accent); }
 .theme-powerquery .author { color: var(--primary-dark); }
 .theme-powerquery .footer-quote::before,
 .theme-powerquery .footer-quote::after { color: var(--primary); }
@@ -520,84 +536,40 @@ a:focus {
 .theme-powerquery a:focus { outline: 2px solid var(--primary-dark); }
 .theme-powerquery .footer-quote { border-left-color: var(--primary); }
 
-/* Power BI theme (yellow/black) */
 .theme-powerbi {
   --primary: #ffffff;
   --primary-dark: #e2b102;
-  --accent: #e2b102; /* Added accent variable */
+  --accent: #e2b102;
   --bg: #af8300;
   --contrast: #ffffff;
 }
 .theme-powerbi header { background: linear-gradient(135deg,var(--bg),#705b0c); color:var(--primary); }
 .theme-powerbi .workshop-card { border-left-color: var(--bg); }
-.theme-powerbi .workshop-card h2 { color: var(--bg); } /* Title uses bg color */
-.theme-powerbi .check::before { color: var(--accent); } /* Uses accent color like Python */
+.theme-powerbi .workshop-card h2 { color: var(--bg); }
+.theme-powerbi .check::before { color: var(--accent); }
 .theme-powerbi .author { color: var(--primary-dark); }
 .theme-powerbi .highlight { background: linear-gradient(to right,#fff9e6,#fffef6); border-color: rgba(242,200,17,0.35); }
 .theme-powerbi .footer-quote { border-left-color: var(--bg); }
 
-/* Power Automate theme (teal) */
 .theme-automate {
   --primary: #111a58;
   --primary-dark: #00788d;
-  --accent: #40e0d0; /* Added accent variable */
+  --accent: #40e0d0;
   --light: #e9fbff;
   --contrast: #ffffff;
 }
 .theme-automate header { background: linear-gradient(135deg,var(--primary),var(--primary-dark)); color:var(--contrast); }
 .theme-automate .workshop-card { border-left-color: var(--primary); }
-.theme-automate .workshop-card h2 { color: var(--primary-dark); } /* Title uses primary-dark color */
-.theme-automate .check::before { color: var(--accent); } /* Uses accent color like Python */
+.theme-automate .workshop-card h2 { color: var(--primary-dark); }
+.theme-automate .check::before { color: var(--accent); }
 .theme-automate .author { color: var(--primary-dark); }
 .theme-automate .highlight { background: linear-gradient(to right,var(--light),#f7ffff); border-color: rgba(0,162,201,0.2); }
 .theme-automate .footer-quote { border-left-color: var(--primary); }
 
-/* === Background patterns for each workshop page using pseudo-elements - tiled === */
-.theme-python::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('image/Python-logo-notext.svg');
-  background-repeat: repeat;
-  background-position: top left;
-  background-size: 800px 800px; /* Keeps original logo size */
-  opacity: 0.08;
-  z-index: -1;
-}
-
-.theme-powerquery::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('image/Microsoft_Office_Excel_Logo.svg');
-  background-repeat: repeat;
-  background-position: top left;
-  background-size: 800px 800px; /* Keeps original logo size */
-  opacity: 0.08;
-  z-index: -1;
-}
-
-.theme-powerbi::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('image/power-bi-icon.svg');
-  background-repeat: repeat;
-  background-position: top left;
-  background-size: 800px 800px; /* Keeps original logo size */
-  opacity: 0.08;
-  z-index: -1;
-}
-
+/* === Background patterns === */
+.theme-python::before,
+.theme-powerquery::before,
+.theme-powerbi::before,
 .theme-automate::before {
   content: "";
   position: fixed;
@@ -605,31 +577,30 @@ a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('image/PowerAutomate_scalable.svg');
   background-repeat: repeat;
   background-position: top left;
-  background-size: 800px 800px; /* Keeps original logo size */
+  background-size: 800px 800px;
   opacity: 0.08;
   z-index: -1;
 }
+.theme-python::before { background-image: url('image/Python-logo-notext.svg'); }
+.theme-powerquery::before { background-image: url('image/Microsoft_Office_Excel_Logo.svg'); }
+.theme-powerbi::before { background-image: url('image/power-bi-icon.svg'); }
+.theme-automate::before { background-image: url('image/PowerAutomate_scalable.svg'); }
 
-/* === Animation Effects === */
-/* Add a pulsing effect for active state on tiles */
+/* === Animations === */
 .workshop-tile:focus {
   animation: pulse 1.5s infinite;
 }
-
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(75, 139, 190, 0.4); }
   70% { box-shadow: 0 0 0 10px rgba(75, 139, 190, 0); }
   100% { box-shadow: 0 0 0 0 rgba(75, 139, 190, 0); }
 }
 
-/* Add floating animation to logo */
 .logo {
   animation: float 3s ease-in-out infinite;
 }
-
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
