@@ -58,10 +58,11 @@ h1 {
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  text-align: left; /* Left-align all subtitles by default */
 }
 
 .tagline {
-  text-align: center;
+  text-align: left; /* Changed from center to left for consistency */
   font-style: italic;
   margin: 1.5rem 0 2.5rem;
   color: #555;
@@ -228,7 +229,7 @@ code {
 
 .workshop-tile {
   background: white;
-  border: 2px solid #7878784b; /* ← This adds a thicker outline */
+  border: 2px solid #7878784b; /* Thicker outline for better visibility */
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
@@ -243,6 +244,10 @@ code {
 .workshop-tile:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.451);
+}
+
+.workshop-tile:active {
+  transform: translateY(-5px) scale(0.98); /* Press-down effect */
 }
 
 .workshop-tile h3 {
@@ -278,7 +283,7 @@ code {
   text-decoration: underline;
 }
 
-/* === Python tile specific hover effect === */
+/* === Tile-specific hover effects with background images === */
 .python-tile {
   position: relative;
   transition: all 0.8s ease;
@@ -304,7 +309,6 @@ code {
   z-index: 1;
 }
 
-/* === Power Query tile specific hover effect === */
 .powerquery-tile {
   position: relative;
   transition: all 0.8s ease;
@@ -330,7 +334,6 @@ code {
   z-index: 1;
 }
 
-/* === Power BI tile specific hover effect === */
 .powerbi-tile {
   position: relative;
   transition: all 0.8s ease;
@@ -356,7 +359,6 @@ code {
   z-index: 1;
 }
 
-/* === Power Automate tile specific hover effect === */
 .powerautomate-tile {
   position: relative;
   transition: all 0.8s ease;
@@ -382,13 +384,18 @@ code {
   z-index: 1;
 }
 
-/* === Responsive === */
+/* === Responsive Design === */
 @media (max-width: 600px) {
   h1 {
     font-size: 1.8rem;
   }
   .subtitle {
     font-size: 1rem;
+    white-space: normal !important;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-align: left !important; /* Keep left alignment on mobile */
   }
   .workshop-card {
     padding: 1.2rem;
@@ -400,6 +407,28 @@ code {
   .footer-quote::before,
   .footer-quote::after {
     display: none;
+  }
+  
+  /* Fix header overflow on mobile */
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start; /* Changed from center to flex-start */
+    text-align: left; /* Left-align text in header row */
+    gap: 8px;
+  }
+  
+  .header-row .logo {
+    transform: translateY(0) translateX(0); /* Reset previous transforms */
+    width: 40px; /* Slightly smaller on mobile */
+  }
+  
+  .header-row .header-text {
+    text-align: left; /* Ensure left text alignment */
+  }
+  
+  /* Center the home page subtitle specifically on mobile */
+  .home-page .header-row .subtitle {
+    text-align: center !important;
   }
 }
 
@@ -428,7 +457,7 @@ a:focus {
   width: 48px;
   height: auto;
   flex: 0 0 auto;
-  /* small nudge if needed: */
+  /* Small nudge adjustment */
   transform: translateY(2px);
   transform: translateX(-10px);
 }
@@ -440,14 +469,21 @@ a:focus {
 .header-row h1 {
   margin: 0;
   line-height: 1.05;
-  font-size: 2.4rem; /* keep your existing size if needed */
+  font-size: 2.4rem; /* Keep your existing size if needed */
 }
 
 .header-row .subtitle {
   margin: 0;
   font-size: 1.2rem;
+  text-align: left; /* Left-align subtitle in header context */
 }
 
+/* NEW: Specific class for home page to center subtitle */
+.home-page .header-row .subtitle {
+  text-align: center;
+}
+
+/* === Theme-Specific Styles === */
 /* Python theme (blue + yellow accents) */
 .theme-python {
   --primary: #173147;
@@ -516,7 +552,7 @@ a:focus {
 .theme-automate .highlight { background: linear-gradient(to right,var(--light),#f7ffff); border-color: rgba(0,162,201,0.2); }
 .theme-automate .footer-quote { border-left-color: var(--primary); }
 
-/* === Background images for each workshop page using pseudo-elements - right aligned === */
+/* === Background patterns for each workshop page using pseudo-elements - tiled === */
 .theme-python::before {
   content: "";
   position: fixed;
@@ -525,9 +561,9 @@ a:focus {
   width: 100%;
   height: 100%;
   background-image: url('image/Python-logo-notext.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 45%;
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: 800px 800px; /* Keeps original logo size */
   opacity: 0.08;
   z-index: -1;
 }
@@ -540,9 +576,9 @@ a:focus {
   width: 100%;
   height: 100%;
   background-image: url('image/Microsoft_Office_Excel_Logo.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 45%;
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: 800px 800px; /* Keeps original logo size */
   opacity: 0.08;
   z-index: -1;
 }
@@ -555,9 +591,9 @@ a:focus {
   width: 100%;
   height: 100%;
   background-image: url('image/power-bi-icon.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 45%;
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: 800px 800px; /* Keeps original logo size */
   opacity: 0.08;
   z-index: -1;
 }
@@ -570,9 +606,31 @@ a:focus {
   width: 100%;
   height: 100%;
   background-image: url('image/PowerAutomate_scalable.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 45%;
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: 800px 800px; /* Keeps original logo size */
   opacity: 0.08;
   z-index: -1;
+}
+
+/* === Animation Effects === */
+/* Add a pulsing effect for active state on tiles */
+.workshop-tile:focus {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(75, 139, 190, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(75, 139, 190, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(75, 139, 190, 0); }
+}
+
+/* Add floating animation to logo */
+.logo {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
