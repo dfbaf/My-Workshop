@@ -156,11 +156,19 @@ code {
   color: #444;
   font-size: 1.15rem;
   position: relative;
-  padding: 1rem;
-  background: linear-gradient(to right, #f8f9fa, #ffffff);
-  border-radius: 8px;
+  padding: 1.8rem;
+  background: white;
+  border-radius: 12px;
   max-width: 800px;
   margin: 2.5rem auto 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid #4B8BBE;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-quote:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.496);
 }
 
 .footer-quote::before,
@@ -385,13 +393,13 @@ code {
   .workshop-card {
     padding: 1.2rem;
   }
-  .footer-quote::before,
-  .footer-quote::after {
-    display: none;
-  }
   .footer-quote {
     padding: 0.8rem;
     font-size: 1rem;
+  }
+  .footer-quote::before,
+  .footer-quote::after {
+    display: none;
   }
 }
 
@@ -408,7 +416,6 @@ a:focus {
   color: #306998;
   font-weight: 600; /* Increased font weight for better readability */
 }
-
 
 .header-row {
   display: flex;
@@ -440,210 +447,132 @@ a:focus {
   margin: 0;
   font-size: 1.2rem;
 }
+
 /* Python theme (blue + yellow accents) */
 .theme-python {
---primary: #173147;
---primary-dark: #1f4f73;
---accent: #FFD43B;
---light: #f1f8ff;
---contrast: #ffffff;
+  --primary: #173147;
+  --primary-dark: #1f4f73;
+  --accent: #FFD43B;
+  --light: #f1f8ff;
+  --contrast: #ffffff;
 }
 .theme-python header { background: linear-gradient(135deg,var(--primary),var(--primary-dark)); color:var(--contrast); }
 .theme-python .workshop-card { border-left-color: var(--primary); }
+.theme-python .workshop-card h2 { color: var(--primary); } /* Title uses primary color */
 .theme-python .check::before { color: var(--accent); }
 .theme-python .author { color: var(--primary-dark); }
 .theme-python .highlight { background: linear-gradient(to right,var(--light),#fffef6); border-color: rgba(255,212,59,0.45); }
-
+.theme-python .footer-quote { border-left-color: var(--primary); }
 
 /* Power Query (Excel) theme */
 .theme-powerquery {
---primary: #06140c;
---primary-dark: #048c4a;
---primary-light: #e9f6ef;
---accent: #a6e0b8;
---contrast: #ffffff;
+  --primary: #06140c;
+  --primary-dark: #048c4a;
+  --accent: #a6e0b8; /* Added accent variable */
+  --primary-light: #e9f6ef;
+  --contrast: #ffffff;
 }
 .theme-powerquery header { background: linear-gradient(135deg,var(--primary),var(--primary-dark)); color:var(--contrast); }
 .theme-powerquery .workshop-card { border-left-color: var(--primary); }
-.theme-powerquery .workshop-card h2 { color: var(--primary-dark); }
-.theme-powerquery .check::before { color: var(--primary); }
+.theme-powerquery .workshop-card h2 { color: var(--primary-dark); } /* Title uses primary-dark color */
+.theme-powerquery .check::before { color: var(--accent); } /* Uses accent color like Python */
 .theme-powerquery .author { color: var(--primary-dark); }
 .theme-powerquery .footer-quote::before,
 .theme-powerquery .footer-quote::after { color: var(--primary); }
 .theme-powerquery .highlight { background: linear-gradient(to right,var(--primary-light),#fbfff8); border-color: var(--accent); box-shadow: inset 0 0 8px rgba(33,115,70,0.08); }
 .theme-powerquery .workshop-tile:focus,
 .theme-powerquery a:focus { outline: 2px solid var(--primary-dark); }
-
+.theme-powerquery .footer-quote { border-left-color: var(--primary); }
 
 /* Power BI theme (yellow/black) */
 .theme-powerbi {
---primary: #ffffff;
---primary-dark: #ffc800;
---bg: #af8300;
---contrast: #ffffff;
+  --primary: #ffffff;
+  --primary-dark: #e2b102;
+  --accent: #e2b102; /* Added accent variable */
+  --bg: #af8300;
+  --contrast: #ffffff;
 }
 .theme-powerbi header { background: linear-gradient(135deg,var(--bg),#705b0c); color:var(--primary); }
-.theme-powerbi .workshop-card { border-left-color: var(--primary); }
-.theme-powerbi .check::before { color: var(--primary); }
-.theme-powerbi .author { color: var(--primary); }
+.theme-powerbi .workshop-card { border-left-color: var(--bg); }
+.theme-powerbi .workshop-card h2 { color: var(--bg); } /* Title uses bg color */
+.theme-powerbi .check::before { color: var(--accent); } /* Uses accent color like Python */
+.theme-powerbi .author { color: var(--primary-dark); }
 .theme-powerbi .highlight { background: linear-gradient(to right,#fff9e6,#fffef6); border-color: rgba(242,200,17,0.35); }
+.theme-powerbi .footer-quote { border-left-color: var(--bg); }
 
 /* Power Automate theme (teal) */
 .theme-automate {
   --primary: #111a58;
   --primary-dark: #00788d;
+  --accent: #40e0d0; /* Added accent variable */
   --light: #e9fbff;
   --contrast: #ffffff;
 }
 .theme-automate header { background: linear-gradient(135deg,var(--primary),var(--primary-dark)); color:var(--contrast); }
 .theme-automate .workshop-card { border-left-color: var(--primary); }
-.theme-automate .check::before { color: var(--primary); }
+.theme-automate .workshop-card h2 { color: var(--primary-dark); } /* Title uses primary-dark color */
+.theme-automate .check::before { color: var(--accent); } /* Uses accent color like Python */
 .theme-automate .author { color: var(--primary-dark); }
 .theme-automate .highlight { background: linear-gradient(to right,var(--light),#f7ffff); border-color: rgba(0,162,201,0.2); }
+.theme-automate .footer-quote { border-left-color: var(--primary); }
 
-/* === Dark Mode Toggle Button === */
-.dark-mode-toggle {
-  background: none;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  transition: all 0.3s ease;
-  font-size: 1.2rem;
+/* === Background images for each workshop page using pseudo-elements - right aligned === */
+.theme-python::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('image/Python-logo-notext.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 45%;
+  opacity: 0.08;
+  z-index: -1;
 }
 
-.dark-mode-toggle:hover {
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+.theme-powerquery::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('image/Microsoft_Office_Excel_Logo.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 45%;
+  opacity: 0.08;
+  z-index: -1;
 }
 
-.dark-mode-toggle .moon {
-  display: none;
+.theme-powerbi::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('image/power-bi-icon.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 45%;
+  opacity: 0.08;
+  z-index: -1;
 }
 
-/* === Dark Mode Styles === */
-[data-theme="dark"] {
-  --bg-color: #1a1a1a;
-  --text-color: #e0e0e0;
-  --card-bg: #2d2d2d;
-  --border-color: #444;
-  --shadow-color: rgba(0, 0, 0, 0.5);
+.theme-automate::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('image/PowerAutomate_scalable.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 45%;
+  opacity: 0.08;
+  z-index: -1;
 }
-
-[data-theme="dark"] body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-[data-theme="dark"] .workshop-card {
-  background: var(--card-bg);
-  border-left-color: #64b5f6;
-}
-
-[data-theme="dark"] .highlight {
-  background: linear-gradient(to right, #333333, #3a3a3a);
-  border-color: #555;
-  color: #e0e0e0;
-}
-
-[data-theme="dark"] code {
-  background-color: #333;
-  border-color: #555;
-  color: #e0e0e0;
-}
-
-[data-theme="dark"] .workshop-tile {
-  background: var(--card-bg);
-  border-color: #555;
-}
-
-[data-theme="dark"] .workshop-tile h3 {
-  color: #64b5f6;
-}
-
-[data-theme="dark"] .footer-quote {
-  background: linear-gradient(to right, #333, #3a3a3a);
-  color: #e0e0e0;
-}
-
-[data-theme="dark"] .dark-mode-toggle {
-  border-color: #666;
-}
-
-[data-theme="dark"] .dark-mode-toggle:hover {
-  border-color: #999;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-[data-theme="dark"] .dark-mode-toggle .sun {
-  display: none;
-}
-
-[data-theme="dark"] .dark-mode-toggle .moon {
-  display: inline;
-}
-
-/* Theme-specific dark modes */
-[data-theme="dark"].theme-python {
-  --bg-color: #1a1a2e;
-  --text-color: #e6f1ff;
-  --card-bg: #16213e;
-  --border-color: #4cc9f0;
-}
-
-[data-theme="dark"].theme-powerbi {
-  --bg-color: #1a1a1a;
-  --text-color: #fff9e6;
-  --card-bg: #2d2d2d;
-  --border-color: #ffd166;
-}
-
-[data-theme="dark"].theme-powerquery {
-  --bg-color: #0d1b1e;
-  --text-color: #e9f6ef;
-  --card-bg: #1b263b;
-  --border-color: #4ade80;
-}
-
-[data-theme="dark"].theme-automate {
-  --bg-color: #0d1b2a;
-  --text-color: #e0f7fa;
-  --card-bg: #14213d;
-  --border-color: #40e0d0;
-}
-
-/* Apply theme colors in dark mode */
-[data-theme="dark"].theme-python header { 
-  background: linear-gradient(135deg, #0d1b2a, #1b263b); 
-  color: #e6f1ff; 
-}
-[data-theme="dark"].theme-python .workshop-card { border-left-color: #4cc9f0; }
-[data-theme="dark"].theme-python .author { color: #4cc9f0; }
-
-[data-theme="dark"].theme-powerbi header { 
-  background: linear-gradient(135deg, #5a4b00, #8b6f00); 
-  color: #fff9e6; 
-}
-[data-theme="dark"].theme-powerbi .workshop-card { border-left-color: #ffd166; }
-[data-theme="dark"].theme-powerbi .author { color: #ffd166; }
-
-[data-theme="dark"].theme-powerquery header { 
-  background: linear-gradient(135deg, #06140c, #045c32); 
-  color: #e9f6ef; 
-}
-[data-theme="dark"].theme-powerquery .workshop-card { border-left-color: #4ade80; }
-[data-theme="dark"].theme-powerquery .author { color: #4ade80; }
-
-[data-theme="dark"].theme-automate header { 
-  background: linear-gradient(135deg, #0a1429, #004d5c); 
-  color: #e0f7fa; 
-}
-[data-theme="dark"].theme-automate .workshop-card { border-left-color: #40e0d0; }
-[data-theme="dark"].theme-automate .author { color: #40e0d0; }
