@@ -19,7 +19,7 @@ body {
   padding: 0 1.5rem;
 }
 
-/* === Sticky Navigation – Logo Pills with Themed Hover === */
+/* === Sticky Navigation – Desktop Pills + Mobile Hamburger === */
 .sticky-nav {
   position: sticky;
   top: 0;
@@ -33,17 +33,38 @@ body {
 .sticky-nav .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0.3rem 0;
+  position: relative;
 }
 
-.sticky-nav ul {
+/* Hamburger Toggle */
+.menu-toggle {
+  display: none;
+  background: #f8f9fb;
+  border: 1px solid #e0e6ed;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  font-size: 1.4rem;
+  color: #306998;
+  cursor: pointer;
+  z-index: 1001;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Nav List */
+.nav-list {
   list-style: none;
   display: flex;
   gap: 0.9rem;
   padding: 0;
   margin: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
+  white-space: nowrap;
 }
 
 .sticky-nav a {
@@ -55,14 +76,17 @@ body {
   font-size: 1.02rem;
   padding: 0.55rem 1.2rem;
   border-radius: 50px;
-  background: white;
+  background: #f8f9fb;
+  border: 1px solid #e0e6ed;
   transition: all 0.25s ease;
   white-space: nowrap;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   gap: 0.5rem;
+  flex: 0 0 auto;
+  min-width: 110px;
+  justify-content: center;
 }
 
-/* Logo styling */
 .sticky-nav a img {
   width: 1.1rem;
   height: 1.1rem;
@@ -75,7 +99,6 @@ body {
   filter: grayscale(0%) opacity(1);
 }
 
-/* Base hover — color will be overridden by themed classes */
 .sticky-nav a:hover,
 .sticky-nav a:focus {
   color: white;
@@ -84,7 +107,7 @@ body {
   outline: none;
 }
 
-/* === Themed Hover Backgrounds === */
+/* Themed Hover Backgrounds */
 .sticky-nav a.nav-home:hover,
 .sticky-nav a.nav-home:focus {
   background: linear-gradient(135deg, #4B8BBE, #306998);
@@ -110,21 +133,37 @@ body {
   background: linear-gradient(135deg, #111a58, #00788d);
 }
 
-/* Mobile: stack vertically */
+/* === Mobile Menu (Hamburger) === */
 @media (max-width: 600px) {
-  .sticky-nav .container {
-    padding: 0.3rem 0;
+  .menu-toggle {
+    display: flex;
   }
-  .sticky-nav ul {
+
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
     flex-direction: column;
     align-items: center;
-    gap: 0.7rem;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
   }
+
+  .nav-list.active {
+    display: flex;
+  }
+
   .sticky-nav a {
-    width: 100%;
-    max-width: 280px;
+    min-width: auto;
+    width: 90%;
     justify-content: center;
+    margin: 0.4rem 0;
     transform: none !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -182,7 +221,7 @@ h1 {
 }
 
 .tagline {
-  text-align: left;
+  text-align: center;
   font-style: italic;
   margin: 1.5rem 0 2.5rem;
   color: #555;
