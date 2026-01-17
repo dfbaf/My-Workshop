@@ -107,7 +107,44 @@ body {
   outline: none;
 }
 
-/* Themed Hover Backgrounds */
+/* === ACTIVE STATE = HOVER STYLE (KEY CHANGE) === */
+.sticky-nav a.active,
+.sticky-nav a.nav-home.active {
+  background: linear-gradient(135deg, #4B8BBE, #306998);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(75, 139, 190, 0.3);
+}
+
+.sticky-nav a.nav-python.active {
+  background: linear-gradient(135deg, #173147, #1f4f73);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(31, 79, 115, 0.3);
+}
+
+.sticky-nav a.nav-powerquery.active {
+  background: linear-gradient(135deg, #06140c, #048c4a);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(4, 140, 74, 0.3);
+}
+
+.sticky-nav a.nav-powerbi.active {
+  background: linear-gradient(135deg, #af8300, #e2b102);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(226, 177, 2, 0.3);
+}
+
+.sticky-nav a.nav-automate.active {
+  background: linear-gradient(135deg, #111a58, #00788d);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 120, 141, 0.3);
+}
+
+/* === Themed Hover Backgrounds (keep for non-active hovers) === */
 .sticky-nav a.nav-home:hover,
 .sticky-nav a.nav-home:focus {
   background: linear-gradient(135deg, #4B8BBE, #306998);
@@ -164,6 +201,11 @@ body {
     margin: 0.4rem 0;
     transform: none !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Ensure active state still shows on mobile */
+  .sticky-nav a.active {
+    transform: none !important;
   }
 }
 
@@ -537,9 +579,8 @@ code {
     display: none;
   }
 
-  /* 👇 CRITICAL FIX: Switch to single column on mobile */
   .tech-grid {
-    grid-template-columns: 1fr; /* Stacked vertically */
+    grid-template-columns: 1fr;
   }
 
   .tech-grid,
