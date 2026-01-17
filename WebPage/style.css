@@ -502,7 +502,7 @@ code {
 .career-grid {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem; /* ← This creates consistent spacing */
+  gap: 1.2rem;
   height: 100%;
   flex: 1;
 }
@@ -535,6 +535,11 @@ code {
 
   .split-divider {
     display: none;
+  }
+
+  /* 👇 CRITICAL FIX: Switch to single column on mobile */
+  .tech-grid {
+    grid-template-columns: 1fr; /* Stacked vertically */
   }
 
   .tech-grid,
