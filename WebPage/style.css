@@ -221,14 +221,12 @@ h1 {
 }
 
 .tagline {
-  text-align: center;
   font-style: italic;
-  margin: 1.5rem 0 2.5rem;
   color: #555;
   font-size: 1.1rem;
 }
 
-/* === Workshop Cards === */
+/* === Workshop Cards (for inner pages) === */
 .workshop-card {
   background: rgb(255, 255, 255);
   border-radius: 12px;
@@ -360,29 +358,23 @@ code {
   font-size: 1.05rem;
 }
 
-/* === Home Page Grid === */
-.workshop-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.5rem;
+/* === Back link === */
+.back-link {
+  text-align: center;
   margin-top: 2rem;
+  font-size: 1rem;
 }
 
-.workshop-grid > .workshop-tile:nth-child(4n+1):nth-last-child(1) {
-  grid-column: 2 / span 2;
+.back-link a {
+  color: #306998;
+  text-decoration: none;
 }
 
-@media (max-width: 900px) {
-  .workshop-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 480px) {
-  .workshop-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.back-link a:hover {
+  text-decoration: underline;
 }
 
+/* === Tile Base Styles (Homepage) === */
 .workshop-tile {
   background: white;
   border: 2px solid #7878784b;
@@ -418,27 +410,13 @@ code {
   margin: 0 auto;
 }
 
-/* Back link */
-.back-link {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 1rem;
-}
-
-.back-link a {
-  color: #306998;
-  text-decoration: none;
-}
-
-.back-link a:hover {
-  text-decoration: underline;
-}
-
 /* === Tile Background Effects === */
 .python-tile,
 .powerquery-tile,
 .powerbi-tile,
-.powerautomate-tile {
+.powerautomate-tile,
+.recruitment-tile,
+.linkedin-tile {
   position: relative;
   transition: all 0.8s ease;
 }
@@ -446,7 +424,9 @@ code {
 .python-tile::before,
 .powerquery-tile::before,
 .powerbi-tile::before,
-.powerautomate-tile::before {
+.powerautomate-tile::before,
+.recruitment-tile::before,
+.linkedin-tile::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -462,23 +442,113 @@ code {
 .powerquery-tile::before { background-image: url('image/Microsoft_Office_Excel_Logo.svg'); }
 .powerbi-tile::before { background-image: url('image/power-bi-icon.svg'); }
 .powerautomate-tile::before { background-image: url('image/PowerAutomate_scalable.svg'); }
+.recruitment-tile::before,
+.linkedin-tile::before { background-image: url('image/rocket_1f680.png'); }
 
 .python-tile:hover::before,
 .powerquery-tile:hover::before,
 .powerbi-tile:hover::before,
-.powerautomate-tile:hover::before {
+.powerautomate-tile:hover::before,
+.recruitment-tile:hover::before,
+.linkedin-tile:hover::before {
   opacity: 0.1;
 }
 
 .python-tile > *,
 .powerquery-tile > *,
 .powerbi-tile > *,
-.powerautomate-tile > * {
+.powerautomate-tile > *,
+.recruitment-tile > *,
+.linkedin-tile > * {
   position: relative;
   z-index: 1;
 }
 
-/* === Responsive Design === */
+/* === EQUAL HEIGHT SPLIT LAYOUT WITH MULTI-CARD SUPPORT === */
+.split-layout {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: stretch;
+}
+
+.split-column {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Left: Tech Grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  height: 100%;
+  flex: 1;
+}
+
+.tech-grid .workshop-tile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* Right: Career Grid */
+.career-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* ← This creates consistent spacing */
+  height: 100%;
+  flex: 1;
+}
+
+.career-grid .workshop-tile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+/* Divider */
+.split-divider {
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #ccc, transparent);
+  margin: 0 1rem;
+  align-self: stretch;
+}
+
+/* === Responsive: Stack on small screens === */
+@media (max-width: 900px) {
+  .split-layout {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .split-divider {
+    display: none;
+  }
+
+  .tech-grid,
+  .career-grid {
+    height: auto;
+  }
+
+  .tech-grid .workshop-tile,
+  .career-grid .workshop-tile {
+    height: auto;
+    flex: none;
+  }
+}
+
 @media (max-width: 600px) {
   h1 { font-size: 1.8rem; }
   .subtitle { font-size: 1rem; text-align: left !important; }
