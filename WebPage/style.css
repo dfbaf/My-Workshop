@@ -366,18 +366,19 @@ code {
 .footer-quote {
   text-align: center;
   font-style: italic;
-  margin-top: 2.5rem;
   color: #444;
   font-size: 1.15rem;
   position: relative;
   padding: 1.8rem;
   background: white;
   border-radius: 12px;
-  max-width: 800px;
+  max-width: calc(900px - 3rem);
   margin: 2.5rem auto 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   border-left: 5px solid #4B8BBE;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 .footer-quote:hover {
   transform: translateY(-2px);
