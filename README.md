@@ -3,7 +3,7 @@
 > **Real skills. Real tools. Zero fluff.**  
 > Practical, beginner-friendly workshops in data automation, analytics, and career development—designed for professionals who want to **work smarter**, **avoid repetitive tasks**, and **land roles they truly deserve**.
 
-Welcome to **The Hands-On Hub**—born from our shared passion. [Fahim](https://www.linkedin.com/in/danialfahim/) (Automation Specialist & Data Analyst) and [Nur Hidayah Merican](https://www.linkedin.com/in/nurhidayahmerican/) (Career Coach & Resume Strategist) team up because we love what we do:  
+Welcome to **The Hands-On Hub**—born from our shared passion. [Danial Fahim](https://www.linkedin.com/in/danialfahim/) (Data Analyst- Automation Specialist) and [Nur Hidayah Merican](https://www.linkedin.com/in/nurhidayahmerican/) (Career Coach & Resume Strategist) team up because we love what we do:  
 - **Fahim** builds automations so you never have to copy-paste the same thing twice.  
 - **Hidayah** helps job seekers uncover their hidden strengths and walk into interviews with confidence.  
 
