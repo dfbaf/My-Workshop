@@ -1,37 +1,85 @@
-# The Hands-On Hub — Workshop Series
+# 🚀 The Hands-On Hub
 
-A collection of hands-on workshop materials for Python, Power Query, Power BI, and Power Automate. Includes static web pages, sample data, and Jupyter notebooks.
+> **Real skills. Real tools. Zero fluff.**  
+> Practical, beginner-friendly workshops in data automation, analytics, and career development—designed for professionals who want to **do less repetitive work** and **get hired faster**.
 
-## Repository structure
-- Web pages and styles:
-  - [WebPage/index.html](WebPage/index.html)
-  - [WebPage/python.html](WebPage/python.html)
-  - [WebPage/powerquery.html](WebPage/powerquery.html)
-  - [WebPage/powerbi.html](WebPage/powerbi.html)
-  - [WebPage/powerautomate.html](WebPage/powerautomate.html)
-  - [WebPage/style.css](WebPage/style.css)
-  - [WebPage/image/](WebPage/image/)
-- Sample data:
-  - [Data/ItemBarcode.csv](Data/ItemBarcode.csv)
-  - [Data/SalesData.csv](Data/SalesData.csv)
-  - [Data/StoreCode.csv](Data/StoreCode.csv)
-- Notebooks:
-  - [PowerQuery/PowerQuery.ipynb](PowerQuery/PowerQuery.ipynb) — generates [Data/SalesData.csv](Data/SalesData.csv)
-  - [Python/Python Workshop Beginner Day 1.ipynb](Python/Python Workshop Beginner Day 1.ipynb)
-  - [Python/Python Workshop Beginner Day 2.ipynb](Python/Python Workshop Beginner Day 2.ipynb)
-- Other folders:
-  - [PowerBI/](PowerBI/)
-  - [PowerAutomate/](PowerAutomate/)
+Welcome to **The Hands-On Hub**—a side-hustle initiative by [Danial Fahim](https://www.linkedin.com/in/dfahim7/) (Automation Specialist & Data Analyst) and [Nur Hidayah Merican](https://www.linkedin.com/in/nurhidayahmerican/) (Career Coach & Resume Strategist). We combine **technical upskilling** with **job-search empowerment** to help you thrive in today’s hybrid workplace.
 
-## Quick start
-- View site: open [WebPage/index.html](WebPage/index.html) in your browser, or serve locally:
-```bash
-python -m http.server 8000
-# then open http://localhost:8000/WebPage/index.html
-```
-- Notebooks: open the .ipynb files in Jupyter or VS Code.
-- Data: run [PowerQuery/PowerQuery.ipynb](PowerQuery/PowerQuery.ipynb) to regenerate [Data/SalesData.csv](Data/SalesData.csv).
+---
 
-## Contributing
-- Suggestions, fixes, and improvements welcome via issues or pull requests.
-- Add a LICENSE file if you want to set reuse terms.
+## 📚 What We Offer
+
+### 🔧 **Tech Workshops (Hands-On & Project-Based)**
+All workshops are designed for absolute beginners and focus on **real office tasks** you face daily:
+
+| Workshop | What You’ll Learn |
+|--------|------------------|
+| **[Python](python.html)** | Automate data cleaning & analysis using Pandas—no prior coding needed. |
+| **[Power Query](powerquery.html)** | Clean, merge, and reshape messy Excel/CSV data in minutes. |
+| **[Power BI](powerbi.html)** | Build self-updating dashboards from raw files to interactive reports. |
+| **[Power Automate Desktop](powerautomate.html)** | Automate boring clicks (file renaming, Excel updates, folder cleanup)—**no cloud, no code, free forever**. |
+
+> 💡 All tech workshops include **free starter kits**, real-world datasets, and step-by-step challenges.
+
+---
+
+### 💼 **Career Support (Recruiter-Approved)**
+Co-led by Hidayah, a career transition specialist with deep experience in HR and talent acquisition:
+
+- ✅ **ATS-friendly resume rewrites** (passes automated screening)
+- ✅ **LinkedIn profile makeovers** that attract recruiters
+- ✅ **Career narrative coaching** (turn gaps or non-linear paths into strengths)
+- ✅ **Job search strategy** tailored for Malaysia & SEA markets
+- ✅ **Free trial review** for the first 10 applicants!
+
+👉 Learn more: [Career Support & Job Search Coaching](recruitment.html)
+
+---
+
+## 🎯 Why This Works
+
+- **Built by practitioners**: Danial automates BAU tasks at AIA; Hidayah has screened thousands of resumes.
+- **No theory—just doing**: Every session solves a real pain point (e.g., “I waste 2 hours daily copying data”).
+- **Free + paid tiers**: Start with a **free trial workshop**, then unlock full access.
+- **Designed for busy professionals**: Short, focused sessions you can apply **immediately**.
+
+---
+
+## 🛠️ Tech Stack Used
+
+- HTML5, CSS3, JavaScript (vanilla)
+- Responsive design for mobile & desktop
+- Static site (easy to host anywhere—GitHub Pages, Netlify, etc.)
+
+---
+
+## 📥 Get Started
+
+1. **Explore workshops**: Visit the live site → [The Hands-On Hub](https://your-username.github.io/My-Workshop/) *(update with your actual URL)*  
+2. **Try a free session**: No signup needed for Day 1 of any workshop.
+3. **Join our community**: We use WhatsApp/Teams for participant engagement and Q&A.
+4. **Interested in collaboration?** We welcome joint workshops with complementary skill sets!
+
+---
+
+## 🤝 Meet the Team
+
+- **Danial Fahim**  
+  Automation Specialist | Data Analyst | Aspiring Data Scientist  
+  🔗 [LinkedIn](https://www.linkedin.com/in/dfahim7/) | ✉️ dfahim7@gmail.com
+
+- **Nur Hidayah Merican**  
+  Career Transition Coach | Resume & LinkedIn Strategist  
+  🔗 [LinkedIn](https://www.linkedin.com/in/nurhidayahmerican/)
+
+---
+
+## 📄 License
+
+This project is for educational and promotional use under **The Hands-On Hub** brand.  
+Content may not be reused commercially without permission.
+
+---
+
+> “The best automation? The one that saves you from doing the same thing tomorrow.”  
+> — *dfbaf*
