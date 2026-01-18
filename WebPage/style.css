@@ -484,7 +484,7 @@ code {
 .powerquery-tile::before { background-image: url('image/Microsoft_Office_Excel_Logo.svg'); }
 .powerbi-tile::before { background-image: url('image/power-bi-icon.svg'); }
 .powerautomate-tile::before { background-image: url('image/PowerAutomate_scalable.svg'); }
-.recruitment-tile::before { background-image: url('image/rocket_1f680.png'); }
+.recruitment-tile::before { background-image: url('image/LinkedIn_icon.svg.png'); }
 .python-tile:hover::before,
 .powerquery-tile:hover::before,
 .powerbi-tile:hover::before,
