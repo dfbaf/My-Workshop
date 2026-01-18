@@ -77,7 +77,7 @@ Passionate about using everyday tools (Power Automate, Python, Power BI) to elim
 ### **Nur Hidayah Merican**  
 **Career Transition Coach | Resume & LinkedIn Strategist**  
 A seasoned guide who’s helped countless candidates—new grads, returners, and career-changers—navigate the full hiring journey with clarity and confidence.  
-🔗 [LinkedIn](https://www.linkedin.com/in/nurhidayahmerican/)
+🔗 [LinkedIn](https://www.linkedin.com/in/nurhidayahmerican/) | ✉️ nurmerican@gmail.com
 
 ---
 
