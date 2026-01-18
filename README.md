@@ -24,12 +24,13 @@ All workshops are designed for absolute beginners and focus on **real office tas
 ---
 
 ### 💼 **Career Support (Recruiter-Approved)**
-Co-led by Hidayah, a career transition specialist with deep experience in HR and talent acquisition:
+Co-led by Hidayah, a seasoned recruiter who has helped countless fresh graduates and senior professionals land their dream roles:
 
-- ✅ **ATS-friendly resume rewrites** (passes automated screening)
+- ✅ **ATS-friendly resume rewrites** that actually get seen
 - ✅ **LinkedIn profile makeovers** that attract recruiters
-- ✅ **Career narrative coaching** (turn gaps or non-linear paths into strengths)
-- ✅ **Job search strategy** tailored for Malaysia & SEA markets
+- ✅ **Career narrative coaching**—helping candidates uncover strengths they didn’t know they had
+- ✅ **End-to-end interview prep**: from screening calls to final panels, with realistic mock scenarios
+- ✅ **Confidence-building strategies** so you walk into interviews calm, clear, and ready
 - ✅ **Free trial review** for the first 10 applicants!
 
 👉 Learn more: [Career Support & Job Search Coaching](https://dfbaf.github.io/My-Workshop/recruitment.html)
@@ -38,8 +39,9 @@ Co-led by Hidayah, a career transition specialist with deep experience in HR and
 
 ## 🎯 Why This Works
 
-- **Built by practitioners**: Danial automates BAU tasks at AIA; Hidayah has screened thousands of resumes.
-- **No theory—just doing**: Every session solves a real pain point (e.g., “I waste 2 hours daily copying data”).
+- **Built from real frustration**: Danial is *very* passionate about automation—not because it’s fancy, but because he’s **too lazy to do repetitive, error-prone tasks** over and over. If a computer can do it once, it should do it forever!
+- **Rooted in real hiring experience**: Hidayah doesn’t just “review resumes”—she’s been on the other side of the table, making hiring decisions, and knows exactly what makes a candidate stand out.
+- **No theory—just doing**: Every session solves a real pain point (e.g., “I rename 50 files every Monday” or “My resume gets ignored”).
 - **Free + paid tiers**: Start with a **free trial workshop**, then unlock full access.
 - **Designed for busy professionals**: Short, focused sessions you can apply **immediately**.
 
@@ -55,7 +57,7 @@ Co-led by Hidayah, a career transition specialist with deep experience in HR and
 
 ## 📥 Get Started
 
-1. **Explore workshops**: Visit the live site → [The Hands-On Hub](https://dfbaf.github.io/My-Workshop/) *(update with your actual URL)*  
+1. **Explore workshops**: Visit the live site → [The Hands-On Hub](https://dfbaf.github.io/My-Workshop/)
 2. **Try a free session**: No signup needed for Day 1 of any workshop.
 3. **Join our community**: We use WhatsApp/Teams for participant engagement and Q&A.
 4. **Interested in collaboration?** We welcome joint workshops with complementary skill sets!
@@ -66,10 +68,12 @@ Co-led by Hidayah, a career transition specialist with deep experience in HR and
 
 - **Danial Fahim**  
   Automation Specialist | Data Analyst | Aspiring Data Scientist  
+  Passionate about using everyday tools to eliminate boring, repetitive work—because life’s too short for manual copy-paste!  
   🔗 [LinkedIn](https://www.linkedin.com/in/danialfahim/) | ✉️ dfahim7@gmail.com
 
 - **Nur Hidayah Merican**  
   Career Transition Coach | Resume & LinkedIn Strategist  
+  A trusted guide for job seekers at all levels—helping them articulate their value, prepare for every interview stage, and show up as their best selves.  
   🔗 [LinkedIn](https://www.linkedin.com/in/nurhidayahmerican/)
 
 ---
