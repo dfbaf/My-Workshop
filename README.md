@@ -3,8 +3,8 @@
 > **Real skills. Real tools. Zero fluff.**  
 > Practical, beginner-friendly workshops in data automation, analytics, and career development—designed for professionals who want to **work smarter**, **avoid repetitive tasks**, and **land roles they truly deserve**.
 
-Welcome to **The Hands-On Hub**—born from our shared passion. [Danial Fahim](https://www.linkedin.com/in/danialfahim/) (Automation Specialist & Data Analyst) and [Nur Hidayah Merican](https://www.linkedin.com/in/nurhidayahmerican/) (Career Coach & Resume Strategist) team up because we love what we do:  
-- **Danial** builds automations so you never have to copy-paste the same thing twice.  
+Welcome to **The Hands-On Hub**—born from our shared passion. [Fahim](https://www.linkedin.com/in/danialfahim/) (Automation Specialist & Data Analyst) and [Nur Hidayah Merican](https://www.linkedin.com/in/nurhidayahmerican/) (Career Coach & Resume Strategist) team up because we love what we do:  
+- **Fahim** builds automations so you never have to copy-paste the same thing twice.  
 - **Hidayah** helps job seekers uncover their hidden strengths and walk into interviews with confidence.  
 
 Together, we blend **technical upskilling** with **job-search empowerment**—because thriving in today’s workplace takes both.
@@ -43,7 +43,7 @@ Led by Hidayah—a trusted coach who has guided **fresh graduates to senior prof
 
 ## 🎯 Why This Works
 
-- **We solve real pain points**: Danial automates tasks because he’s *too lazy* (and too error-prone!) to do boring, repetitive work manually. If it can be automated once, it should run forever.
+- **We solve real pain points**: Fahim automates tasks because he’s *too lazy* (and too error-prone!) to do boring, repetitive work manually. If it can be automated once, it should run forever.
 - **No fluff, just results**: Every exercise mirrors actual office scenarios—like updating daily sales files or cleaning HR data.
 - **Beginner-first design**: No prior experience? Perfect. We start from “What is a variable?” and end with “I built this myself.”
 - **Free entry point**: Try Day 1 of any tech workshop at no cost—no signup needed.
@@ -69,7 +69,7 @@ Led by Hidayah—a trusted coach who has guided **fresh graduates to senior prof
 
 ## 🤝 Meet the Team
 
-### **Danial Fahim**  
+### **Fahim**  
 **Automation Specialist | Data Analyst | Aspiring Data Scientist**  
 Passionate about using everyday tools (Power Automate, Python, Power BI) to eliminate tedious, error-prone work. Believes life’s too short for manual copy-paste.  
 🔗 [LinkedIn](https://www.linkedin.com/in/danialfahim/) | ✉️ dfahim7@gmail.com
