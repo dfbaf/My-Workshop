@@ -184,7 +184,7 @@ body {
   box-shadow: 0 4px 10px rgba(93, 64, 55, 0.3);
 }
 .sticky-nav a.nav-about.active {
-  background: linear-gradient(135deg, #6c5ce7, #5649c3);
+  background: linear-gradient(135deg, #42389c, #312a71);
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(108, 92, 231, 0.3);
@@ -725,8 +725,8 @@ code {
 
 /* === About Us Theme === */
 .theme-about {
-  --primary: #6c5ce7;
-  --primary-dark: #5649c3;
+  --primary: #1d1847;
+  --primary-dark: #584bcd;
   --accent: #a29bfe;
   --light: #f0effc;
   --contrast: #ffffff;
@@ -764,7 +764,7 @@ code {
 .theme-powerbi::before { background-image: url('image/power-bi-icon.svg'); }
 .theme-automate::before { background-image: url('image/PowerAutomate_scalable.svg'); }
 .theme-recruitment::before { background-image: url('image/rocket_1f680.png'); }
-.theme-about::before { background-image: url('image/rocket_1f680.png'); }
+.theme-about::before { background-image: url('image/about-us.svg'); }
 
 /* === Animations === */
 .workshop-tile:focus {
