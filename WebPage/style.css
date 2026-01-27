@@ -137,6 +137,13 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(93, 64, 55, 0.3);
 }
+.sticky-nav a.nav-about:hover,
+.sticky-nav a.nav-about:focus {
+  background: linear-gradient(135deg, #6c5ce7, #5649c3);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(108, 92, 231, 0.3);
+}
 
 /* === Active States === */
 .sticky-nav a.active,
@@ -175,6 +182,12 @@ body {
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(93, 64, 55, 0.3);
+}
+.sticky-nav a.nav-about.active {
+  background: linear-gradient(135deg, #6c5ce7, #5649c3);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(108, 92, 231, 0.3);
 }
 
 /* === Mobile Menu (Hamburger) – Only for very small screens === */
@@ -710,12 +723,29 @@ code {
 .theme-recruitment .highlight { background: linear-gradient(to right,var(--light),#fdfbf9); border-color: rgba(141, 110, 99, 0.3); }
 .theme-recruitment .footer-quote { border-left-color: var(--primary); }
 
+/* === About Us Theme === */
+.theme-about {
+  --primary: #6c5ce7;
+  --primary-dark: #5649c3;
+  --accent: #a29bfe;
+  --light: #f0effc;
+  --contrast: #ffffff;
+}
+.theme-about header { background: linear-gradient(135deg,var(--primary),var(--primary-dark)); color:var(--contrast); }
+.theme-about .workshop-card { border-left-color: var(--primary); }
+.theme-about .workshop-card h2 { color: var(--primary-dark); }
+.theme-about .check::before { color: var(--accent); }
+.theme-about .author { color: var(--primary-dark); }
+.theme-about .highlight { background: linear-gradient(to right,var(--light),#f8f7ff); border-color: rgba(108, 92, 231, 0.3); }
+.theme-about .footer-quote { border-left-color: var(--primary); }
+
 /* === Background patterns === */
 .theme-python::before,
 .theme-powerquery::before,
 .theme-powerbi::before,
 .theme-automate::before,
-.theme-recruitment::before {
+.theme-recruitment::before,
+.theme-about::before {
   content: "";
   position: fixed;
   top: 0;
@@ -734,6 +764,7 @@ code {
 .theme-powerbi::before { background-image: url('image/power-bi-icon.svg'); }
 .theme-automate::before { background-image: url('image/PowerAutomate_scalable.svg'); }
 .theme-recruitment::before { background-image: url('image/rocket_1f680.png'); }
+.theme-about::before { background-image: url('image/rocket_1f680.png'); }
 
 /* === Animations === */
 .workshop-tile:focus {
