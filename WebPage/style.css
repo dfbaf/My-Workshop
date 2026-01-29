@@ -139,7 +139,7 @@ body {
 }
 .sticky-nav a.nav-about:hover,
 .sticky-nav a.nav-about:focus {
-  background: linear-gradient(135deg, #6c5ce7, #5649c3);
+  background: linear-gradient(135deg, #42389c, #312a71);
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(108, 92, 231, 0.3);
