@@ -1,92 +1,162 @@
 # 🚀 The Hands-On Hub
+## Trial Class: Tech Skills + Career Growth
 
-> **Real skills. Real tools. Zero fluff.**  
-> Practical, beginner-friendly workshops in data automation, analytics, and career development—designed for professionals who want to **work smarter**, **avoid repetitive tasks**, and **land roles they truly deserve**.
+**Presented by: Danial Fahim & Nur Hidayah Merican**
 
-Welcome to **The Hands-On Hub**—born from our shared passion. [Danial Fahim](https://www.linkedin.com/in/danialfahim/) (Data Analyst- Automation Specialist) and [Nur Hidayah Merican](https://www.linkedin.com/in/nurhidayahmerican/) (Career Coach & Resume Strategist) team up because we love what we do:  
-- **Fahim** builds automations so you never have to copy-paste the same thing twice.  
-- **Hidayah** helps job seekers uncover their hidden strengths and walk into interviews with confidence.  
+> *"Where technology meets career growth"*
+## 👋 Meet Your Instructors
 
-Together, we blend **technical upskilling** with **job-search empowerment**—because thriving in today’s workplace takes both.
+### Danial Fahim
+- 🤖 Automation Specialist & Data Analyst
+- 🎓 Background: Applied Mathematics & Actuarial Science
+- 💡 Passionate about turning repetitive tasks into one-click solutions
+- 👨‍👦 Proud father of Daim
 
----
+### Nur Hidayah Merican
+- 💼 Career Coach & Resume Strategist
+- 🎯 Technical Recruiter experience
+- ✨ Helps professionals translate skills into job offers
+- 🌏 Focused on Malaysian & SEA job markets
 
-## 📚 What We Offer
+> *Together, we bridge the gap between **doing the work** and **getting recognized for it**.*
+## ❓ Why We Created This
 
-### 🔧 **Tech Workshops (Learn by Doing)**
-All workshops are built for absolute beginners and focus on **real tasks you face every day**—no fake examples, no theory dumps.
+### The Gap We Saw
 
-| Workshop | What You’ll Build |
-|--------|------------------|
-| **[Python](https://dfbaf.github.io/My-Workshop/python.html)** | Clean messy data, automate reports, and write reusable scripts—even if you’ve never coded before. |
-| **[Power Query](https://dfbaf.github.io/My-Workshop/powerquery.html)** | Transform chaotic Excel/CSV files into clean, refreshable tables—in minutes. |
-| **[Power BI](https://dfbaf.github.io/My-Workshop/powerbi.html)** | Turn raw data into self-updating dashboards that tell a story. |
-| **[Power Automate Desktop](https://dfbaf.github.io/My-Workshop/powerautomate.html)** | Automate file renaming, Excel updates, folder cleanup—and more—**with zero code, offline, and free forever**. |
+🔍 **Observation**: Professionals are stuck in a double bind:
 
-> 💡 Every workshop includes real datasets, step-by-step challenges, and a “Day 1 free” preview.
+| Problem | Reality |
+|---------|---------|
+| 🔄 Spending hours on repetitive BAU tasks | Mistakes happen → redo work → waste time |
+| 🛠️ Powerful tools exist (but unused) | "I'm not tech-savvy enough" mindset |
+| 📄 Great skills, weak resume/LinkedIn | Recruiters can't find you |
+| 🎓 Learned new tools, but can't showcase them | Job applications get ignored |
 
----
+> *This isn't theoretical — it's happening right now in offices everywhere.*
+## 🎯 Our Solution: The 4Ps + Career Support
 
-### 💼 **Career Support (From Someone Who’s Been on the Hiring Side)**
-Led by Hidayah—a trusted coach who has guided **fresh graduates to senior professionals** through every stage of the job hunt:
+### The Technical Stack (The 4Ps)
 
-- ✅ **Resume rewrites** that beat applicant tracking systems (ATS)
-- ✅ **LinkedIn makeovers** that get recruiters to reach out *to you*
-- ✅ **Interview prep** tailored to your target role—from screening calls to final panels
-- ✅ **Strength discovery**: helping you articulate value you didn’t even realize you had
-- ✅ **Confidence coaching** so you handle tough questions with ease
-- ✅ **Free trial review** for the first 10 applicants!
+| Tool | What It Does | Best For |
+|------|-------------|----------|
+| 🐍 **Python** | Coding, data analysis, automation | Complex logic, data science |
+| 📊 **Power Query** | Clean & transform data in Excel/Power BI | Data prep, no-code ETL |
+| 📈 **Power BI** | Interactive dashboards & reporting | Visual storytelling, insights |
+| 🤖 **Power Automate** | Automate clicks, files, emails | Repetitive office tasks |
 
-👉 Explore more: [Career Support & Job Search Coaching](https://dfbaf.github.io/My-Workshop/recruitment.html)
+### + 💼 Career Consultation
+- ATS-friendly resume rewrite
+- LinkedIn profile optimization
+- Interview prep & job search strategy
 
----
+> *Learn the skill → Package the skill → Land the role*
+## 🤔 Who Should Join This Course?
 
-## 🎯 Why This Works
+✅ **You, if you**:
+- Spend time on repetitive Excel/file tasks
+- Want to automate boring work (but don't know where to start)
+- Are learning tech skills but struggle to showcase them
+- Have a resume that isn't getting interviews
+- Are returning to work after a break or switching careers
+- Want practical, job-ready skills (not just theory)
 
-- **We solve real pain points**: Fahim automates tasks because he’s *too lazy* (and too error-prone!) to do boring, repetitive work manually. If it can be automated once, it should run forever.
-- **No fluff, just results**: Every exercise mirrors actual office scenarios—like updating daily sales files or cleaning HR data.
-- **Beginner-first design**: No prior experience? Perfect. We start from “What is a variable?” and end with “I built this myself.”
-- **Free entry point**: Try Day 1 of any tech workshop at no cost—no signup needed.
+❌ **Not for you, if you**:
+- Expect to become an expert in 2 hours 😅
+- Want only theory without hands-on practice
+- Aren't willing to try something new
 
----
+> *This trial is your low-risk way to test the fit!*
+## 🐍 Python Trial: Surface Level
+### Let's Write Your First Code!
 
-## 🛠️ Tech Stack
+No prior experience needed — we'll go step-by-step.
 
-- HTML5, CSS3, vanilla JavaScript
-- Fully responsive (works on phone, tablet, and desktop)
-- Static site—easy to deploy via GitHub Pages, Netlify, or Vercel
+**What we'll try**:
+1. Print a message
+2. Use variables & data types
+3. Simple logic with `if/else`
+4. A tiny loop
 
----
+> *Don't worry about memorizing — just experience how it feels to code!*
+# 🔹 Step 1: Hello, World!
+print("🚀 Welcome to The Hands-On Hub!")
+print("Let's automate something today.")
+# 🔹 Step 2: Variables & Data Types
+name = "Fahim"           # string
+years_experience = 5     # integer
+is_automating = True     # boolean
+hourly_rate = 45.50      # float
 
-## 📥 Get Started
+print(f"Hi, I'm {name}.")
+print(f"I have {years_experience} years of experience.")
+print(f"Am I automating today? {is_automating}")
+print(f"My hypothetical hourly rate: RM{hourly_rate}")
+# 🔹 Step 3: Simple Logic (if/else)
+tasks_completed = 8
+target = 5
 
-1. **Browse workshops**: [The Hands-On Hub](https://dfbaf.github.io/My-Workshop/)
-2. **Try Day 1 free**—no email, no payment
-3. **Join our community**: We support learners via WhatsApp or Teams for Q&A and engagement
-4. **Want to collaborate?** We’re open to co-hosting workshops with complementary experts!
+if tasks_completed >= target:
+    print("✅ Great job! You've exceeded your target.")
+else:
+    print("📋 Keep going — you've got this!")
 
----
+# Try changing tasks_completed to 3 and re-run!
+# 🔹 Step 4: Tiny Loop (Automate Repetition!)
+print("⏳ Automating 5 repetitive tasks...")
+for i in range(1, 6):
+    print(f"   Task {i} completed ✓")
+print("🎉 All done! That's what automation feels like.")
+## 🧪 Little Projects You Could Build
 
-## 🤝 Meet the Team
+### After the full workshop, you could automate:
 
-### **Fahim**  
-**Automation Specialist | Data Analyst | Aspiring Data Scientist**  
-Passionate about using everyday tools (Power Automate, Python, Power BI) to eliminate tedious, error-prone work. Believes life’s too short for manual copy-paste.  
-🔗 [LinkedIn](https://www.linkedin.com/in/danialfahim/) | ✉️ dfahim7@gmail.com
+| Project | Tool | Time Saved |
+|---------|------|-----------|
+| 📁 Rename 100 files with dates | Power Automate | ~30 mins → 10 seconds |
+| 📊 Clean messy sales data | Power Query | ~1 hour → 1 click |
+| 📈 Build a live dashboard | Power BI | Manual reports → auto-refresh |
+| 🐍 Analyze employee performance | Python + Pandas | Hours → minutes |
+| 💼 Update resume with new skills | Career Coaching | Guesswork → strategy |
 
-### **Nur Hidayah Merican**  
-**Career Transition Coach | Resume & LinkedIn Strategist**  
-A seasoned guide who’s helped countless candidates—new grads, returners, and career-changers—navigate the full hiring journey with clarity and confidence.  
-🔗 [LinkedIn](https://www.linkedin.com/in/nurhidayahmerican/) | ✉️ nurmerican@gmail.com
+> *Small wins compound. One automation today = hours saved every week.*
+## 🗓️ What's Next After This Trial?
 
----
+### If you enjoyed this:
 
-## 📄 License
+1. **Join the full workshop** (2 days per tool)
+2. **Get hands-on** with real datasets & projects
+3. **Build a portfolio** of automations you created
+4. **Work with Hidayah** to update your resume/LinkedIn
+5. **Apply for roles** with confidence + proof of skills
 
-This project is created for educational and promotional use under **The Hands-On Hub** brand.  
-Content may not be reused commercially without explicit permission.
+### Trial Bonus 🎁
+- First 10 sign-ups get a **free 15-min career consultation**
+- Access to starter datasets & cheat sheets
+- Invitation to our WhatsApp/Teams community
 
----
+> *No pressure — just opportunity.*
+## ❓ Q&A Time
 
-> “The best automation? The one that saves you from doing the same thing tomorrow.”  
-> — *dfbaf*
+### Ask us anything!
+
+🔹 About the workshops?
+🔹 About your specific use case?
+🔹 About pricing, schedule, or prerequisites?
+🔹 About how to combine tech + career support?
+
+### Or just say hi 👋
+
+**Danial**: Automation, data, Python, Power Platform  
+**Hidayah**: Resumes, LinkedIn, interviews, career strategy
+
+> *No question is too small — we're here to help.*
+# Thank You! 🙏
+
+### Next Steps:
+1. 📝 Fill out the feedback form (link in chat)
+2. 📧 Email us: dfahim7@gmail.com
+3. 🔗 Connect on LinkedIn: [Danial Fahim] | [Nur Hidayah Merican]
+4. 🚀 Ready to join? Reply "I'M IN" in the group!
+
+**The Hands-On Hub**  
+*Where technology meets career growth*
